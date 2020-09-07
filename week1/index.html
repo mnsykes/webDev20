@@ -4,48 +4,61 @@
 		<meta charset="utf-8" />
 		<title>Matthew Sykes | Bio</title>
 		<link rel="stylesheet" type="text/css" href="../css/week1Main.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet" />
 		<script src="https://kit.fontawesome.com/c864577d8c.js" crossorigin="anonymous"></script>
-		<script src="../scripts/week1.js"></script>
 	</head>
 	<body>
-		<div class="wrapper">
-			<h1 id="typewriter">
-				<script>
-					typeWriter();
-				</script>
-			</h1>
-		</div>
-		<button class="enter">Enter</button>
-		<div class="mainWrapper">
-			<div class="title">
-				<h1>Matthew Sykes</h1>
-				<h4>Future Front-End Developer</h4>
+		<div id="bio-main">
+			<div class="bio-name">
+				<h1>Hello, I'm <span>Matthew Sykes</span></h1>
+				<h3>Former Banker, Future Front-End Developer, All-Around Nice Guy</h3>
 			</div>
-			<div class="bioImage">
-				<img src="assets/images/bio-image.png" alt="Illustration of Matthew Sykes" />
-			</div>
-			<button id="modalButton">Resume</button>
-			<div id="modalBox" class="modal">
-				<div class="resumeModal">
-					<embed src="assets/pdf/portfolio-resume.pdf" type="" height="800px" width="700px" />
+			<div class="bio-area">
+				<div class="bio-img">
+					<div class="bio-img-area">
+						<img src="assets/images/bio-image.png" alt="Illustration of Matthew Sykes" />
+					</div>
+				</div>
+				<div class="bio-about">
+					<h2>About Me</h2>
+					<br />
+					<p>
+						I'm a father of two, soon-to-be husband and recently laid-off banker who's trying to make a career change in
+						the middle of pandemic. In a time of so many unkowns the one thing I know for sure is that I will dedicate
+						myself to learning and making a better life for my family by achieving my goal of becoming a Front-End
+						Developer.
+					</p>
+					<br />
+					<div class="resume">
+						<h2>View My Resume</h2>
+						<div class="bio-btn">
+							<button id="modal-button">Click Here</button>
+						</div>
+						<div id="social">
+							<h2>Get In Touch</h2>
+							<div class="social-icons">
+								<a href="https://twitter.com/mnsykes">
+									<i class="fab fa-twitter-square"></i>
+								</a>
+								<a href="https://github.com/mnsykes">
+									<i class="fab fa-github"></i>
+								</a>
+								<a href="https://discord.com/channels/mnsykes#3396">
+									<i class="fab fa-discord"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<br />
 				</div>
 			</div>
-			<div class="bioPara">
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint maxime ipsa repudiandae officia dolore dolores
-					placeat inventore eaque voluptatum incidunt. Nulla, quibusdam quam dolores voluptates neque culpa dicta iusto
-					consectetur voluptate numquam, unde dignissimos quidem officia rerum excepturi? Dolorum, nesciunt?
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, distinctio cupiditate, beatae aspernatur
-					impedit consequatur et laborum sequi veritatis a iste quaerat rem corrupti. Saepe!
-				</p>
-			</div>
-			<div class="social">
-				<i class="fab fa-discord"></i>
-				<i class="fab fa-github"></i>
-				<i class="fab fa-twitter-square"></i>
+			<div id="modal-box" class="modal">
+				<div class="resume-modal">
+					<button class="close">Close</button>
+					<embed src="assets/pdf/portfolio-resume.pdf" height="900" width="800" />
+				</div>
 			</div>
 		</div>
+		<script src="scripts/bio.js"></script>
 	</body>
 </html>
