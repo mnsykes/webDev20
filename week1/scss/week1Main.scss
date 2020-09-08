@@ -107,6 +107,10 @@ ul {
 	}
 }
 
+#social i:hover {
+	transform: scale(1.1);
+}
+
 #modal-box {
 	display: none;
 	position: fixed;

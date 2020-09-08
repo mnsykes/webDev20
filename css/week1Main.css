@@ -103,7 +103,6 @@ ul {
 }
 
 #social {
-  border: 1px solid red;
   text-align: center;
 }
 
@@ -116,6 +115,11 @@ ul {
 #social h2 {
   background: #fddc5c;
   margin-bottom: 15px;
+}
+
+#social i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #modal-box {
