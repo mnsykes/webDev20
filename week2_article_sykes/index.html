@@ -19,7 +19,10 @@
 	</head>
 	<body>
 		<div class="container-fluid">
-			<nav class="navbar sticky-top navbar-light bg-white">
+			<button type="button" id="home-btn" class="btn btn-lg btn-outline-primary">
+				<a href="#top">Top</a>
+			</button>
+			<nav class="navbar navbar-light bg-white">
 				<span class="navbar-brand mb-0">The Fake Blog Post</span>
 				<form class="form-inline">
 					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
@@ -30,11 +33,46 @@
 			<div class="article bg-light">
 				<h1>
 					<abbr>The All-Inclusive Guide to Web Typography Best Practices</abbr>
-				</h1>
+				</h1 id="top">
 				<ul class="list-inline">
 					<li class="list-inline-item text-muted">Marc Schenker</li>
 					<li class="list-inline-item text-muted">August 27, 2014</li>
 				</ul>
+				<br />
+				<div class="contents">
+					<ol class="contents-items">
+						<li>
+							<a href="#heading-1">Headings</a>
+						</li>
+						<li>
+							<a href="#heading-2">Body</a>
+						</li>
+						<li>
+							<a href="#heading-3">An Interesting Note</a>
+						</li>
+						<li>
+							<a href="#heading-4">Backgrounds</a>
+						</li>
+						<li>
+							<a href="#heading-5">Font Size for Headlines</a>
+						</li>
+						<li>
+							<a href="#heading-6">Font Size for Body</a>
+						</li>
+						<li>
+							<a href="#heading-7">Line Length for Body</a>
+						</li>
+						<li>
+							<a href="#heading-8">Characters Per Line</a>
+						</li>
+						<li>
+							<a href="#heading-9">Responsive Typography</a>
+						</li>
+						<li>
+							<a href="#heading-10">The Big Takeaways</a>
+						</li>
+					</ol>
+				</div>
 				<br />
 				<p class>
 					<span class="lead">Look around the Internet</span>, and note how typography absolutely dominates web design in
@@ -59,7 +97,7 @@
 					guide to typography best practices on the Internet. Enjoy.
 				</p>
 				<br />
-				<h2>Headings</h2>
+				<h2 id="heading-1">Headings</h2>
 				<br />
 				<p>
 					The headings in your site copy are arguably very important because depressing research shows that the majority
@@ -84,7 +122,7 @@
 					popularity of these fonts is because of positive feedback from readers.
 				</p>
 				<br />
-				<h2>Body</h2>
+				<h2 id="heading-2">Body</h2>
 				<br />
 				<p>
 					The body of your website makes up the most important part of your content—even if fewer people read that than
@@ -99,7 +137,7 @@
 					frequently used sans-serif fonts for body copy are Arial and Helvetica.
 				</p>
 				<br />
-				<h2>An Interesting Note</h2>
+				<h2 id="heading-3">An Interesting Note</h2>
 				<br />
 				<p>
 					It’s noteworthy that the study also determined that the majority of websites currently don’t use any standard
@@ -114,7 +152,7 @@
 					very receptive to unconventional typefaces, so long as they don’t hurt the user experience on websites.
 				</p>
 				<br />
-				<h2>Backgrounds</h2>
+				<h2 id="heading-4">Backgrounds</h2>
 				<br />
 				<p>
 					It goes without saying that a respectable background in web design is whatever color lets the text on it stand
@@ -139,7 +177,7 @@
 					the classic color format in newspapers, which also explains its widespread popularity in Internet body copy.
 				</p>
 				<br />
-				<h2>Typical Font Size for Headlines</h2>
+				<h2 id="heading-5">Typical Font Size for Headlines</h2>
 				<br />
 				<p>
 					The trend is definitely bigger is better, at least as far as headlines on the web are concerned. 38 pixels is
@@ -155,7 +193,7 @@
 					BootstrapBay’s blog smack dab in the middle of what’s popular.
 				</p>
 				<br />
-				<h2>Typical Font Size for Body Copy</h2>
+				<h2 id="heading-6">Typical Font Size for Body Copy</h2>
 				<br />
 				<p>
 					Body copy is a different beast than headlines, so it’s no shock that the typical font size for body copy is
@@ -177,7 +215,7 @@
 					copy to get this all-important ratio.
 				</p>
 				<br />
-				<h2>Body Copy Optimal Line Length</h2>
+				<h2 id="heading-7">Body Copy Optimal Line Length</h2>
 				<br />
 				<p>The rule, generally speaking, is that a longer line length should equal a higher line height.</p>
 				<p>
@@ -193,7 +231,7 @@
 					so that it doesn’t look too cluttered.
 				</p>
 				<br />
-				<h2>How Many Characters on Every Line?</h2>
+				<h2 id="heading-8">How Many Characters on Every Line?</h2>
 				<br />
 				<p>
 					It’s important to hit that particular sweet spot in the number of characters per line for your website to look
@@ -210,7 +248,7 @@
 					copy appear too small; decrease the number of characters too much, and you run the risk of swelling your body
 					copy closer to what your headline and heading sizes are.
 				</p>
-				<h2>Responsive Typography</h2>
+				<h2 id="heading-9">Responsive Typography</h2>
 				<br />
 				<p>
 					Here’s some good news that should please those who like looking at websites across different platforms: 42% of
@@ -230,7 +268,7 @@
 					users will continue to put up with this.
 				</p>
 				<br />
-				<h2>The Big Takeaways From All of This</h2>
+				<h2 id="heading-10">The Big Takeaways From All of This</h2>
 				<br />
 				<p>
 					Okay, so now you know what’s up with typography in the present day. Sure, trends in web design change
@@ -265,7 +303,7 @@
 					when you take these best practices and the user experience to heart.
 				</p>
 				<br />
-				<div class="card mb-3" style="max-width: 540px">
+				<div class="card mb-3">
 					<div class="row no-gutters">
 						<div class="col-md-4" id="author-image">
 							<img src="assets/images/avatar.png" class="card-img img-fluid" alt="Image of the author" />
@@ -302,5 +340,6 @@
 			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 			crossorigin="anonymous"
 		></script>
+		<script src="scripts/week2.js"></script>
 	</body>
 </html>

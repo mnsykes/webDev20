@@ -1,5 +1,24 @@
 $blue: #007bff;
 
+html {
+	scroll-behavior: smooth;
+}
+
+#home-btn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	padding: 15px;
+	border-radius: 50%;
+
+	a:hover {
+		color: white;
+		text-decoration: none;
+	}
+}
+
 .navbar {
 	margin: 15px 0;
 
@@ -15,13 +34,28 @@ $blue: #007bff;
 	padding: 50px 50px;
 	max-width: 84ch;
 
+	.contents-items {
+		border: 4px dashed rgba($color: $blue, $alpha: 0.4);
+		column-count: 2;
+		width: 80%;
+		margin: 0 auto;
+
+		a {
+			color: #1e488f;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: $blue;
+		}
+	}
+
 	.lead {
 		font-size: 20px;
 		font-weight: normal;
 	}
 
 	h1 {
-		border-bottom: 4px dashed rgba($color: $blue, $alpha: 0.4);
 		font-weight: normal;
 		font-size: 45px;
 	}
@@ -36,24 +70,23 @@ $blue: #007bff;
 		font-size: 18px;
 	}
 
-	ul {
+	.dummy-link {
+		color: #1e488f;
+	}
+
+	.best-practice {
+		border: 4px dashed rgba($color: $blue, $alpha: 0.4);
+		padding: 15px;
+	}
+
+	.bonus-item {
+		border: 4px dashed rgba($color: $blue, $alpha: 0.4);
+		padding: 15px;
+	}
+
+	.card {
+		h5 {
+			background: linear-gradient(180deg, rgba(white, 0) 70%, rgba($blue, 0.4) 50%);
+		}
 	}
 }
-
-.dummy-link {
-	color: #1e488f;
-}
-
-.best-practice {
-	border: 4px dashed rgba($color: $blue, $alpha: 0.4);
-	padding: 15px;
-}
-
-.bonus-item {
-	border: 4px dashed rgba($color: $blue, $alpha: 0.4);
-	padding: 15px;
-}
-
-// .card {
-
-// }

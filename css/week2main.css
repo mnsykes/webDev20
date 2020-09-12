@@ -1,3 +1,22 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#home-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+#home-btn a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .navbar {
   margin: 15px 0;
 }
@@ -15,13 +34,29 @@
   max-width: 84ch;
 }
 
+.article .contents-items {
+  border: 4px dashed rgba(0, 123, 255, 0.4);
+  -webkit-column-count: 2;
+          column-count: 2;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.article .contents-items a {
+  color: #1e488f;
+  text-decoration: none;
+}
+
+.article .contents-items a:hover {
+  color: #007bff;
+}
+
 .article .lead {
   font-size: 20px;
   font-weight: normal;
 }
 
 .article h1 {
-  border-bottom: 4px dashed rgba(0, 123, 255, 0.4);
   font-weight: normal;
   font-size: 45px;
 }
@@ -37,17 +72,22 @@
   font-size: 18px;
 }
 
-.dummy-link {
+.article .dummy-link {
   color: #1e488f;
 }
 
-.best-practice {
+.article .best-practice {
   border: 4px dashed rgba(0, 123, 255, 0.4);
   padding: 15px;
 }
 
-.bonus-item {
+.article .bonus-item {
   border: 4px dashed rgba(0, 123, 255, 0.4);
   padding: 15px;
+}
+
+.article .card h5 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(0, 123, 255, 0.4)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, rgba(0, 123, 255, 0.4) 50%);
 }
 /*# sourceMappingURL=week2main.css.map */
