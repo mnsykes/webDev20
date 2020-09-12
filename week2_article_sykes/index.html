@@ -12,53 +12,37 @@
 			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="../css/style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Doppio+One&family=Gudea&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/week2main.css" />
 
 		<title>Article</title>
 	</head>
 	<body>
-		<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-light bg-primary">
-				<h3 class="navbar-brand text-light">The Fake Bootstrap Blog</h3>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item">
-							<a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-light" href="#">Articles <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-light" href="#">Contact <span class="sr-only">(current)</span></a>
-						</li>
-					</ul>
-				</div>
+		<div class="container-fluid">
+			<nav class="navbar sticky-top navbar-light bg-white">
+				<span class="navbar-brand mb-0">The Fake Blog Post</span>
+				<form class="form-inline">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+					<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+				</form>
 			</nav>
-			<div class="article">
-				<h1>The All-Inclusive Guide to Web Typography Best Practices</h1>
+
+			<div class="article bg-light">
+				<h1>
+					<abbr>The All-Inclusive Guide to Web Typography Best Practices</abbr>
+				</h1>
 				<ul class="list-inline">
-					<li class="list-inline-item">Marc Schenker</li>
-					<li class="list-inline-item">August 27, 2014</li>
+					<li class="list-inline-item text-muted">Marc Schenker</li>
+					<li class="list-inline-item text-muted">August 27, 2014</li>
 				</ul>
 				<br />
-				<p>
-					Look around the Internet, and note how typography absolutely dominates web design in every aspect. After all,
-					there’s a reason that <strong>web design is 95% typography</strong>. This makes a world of sense when you
-					think about it. The Internet is all about content, and content means text and words. And that means
-					typography.
+				<p class>
+					<span class="lead">Look around the Internet</span>, and note how typography absolutely dominates web design in
+					every aspect. After all, there’s a reason that
+					<strong class="dummy-link">web design is 95% typography</strong>. This makes a world of sense when you think
+					about it. The Internet is all about content, and content means text and words. And that means typography.
 				</p>
+
 				<p>
 					The smart web designer knows this and will therefore devote a lot of careful thought and deliberation to
 					getting typography right on any site that he’s working on. In his quest to make type both functional and
@@ -69,18 +53,19 @@
 				<p>
 					Because of all of these questions and considerations, it’s not that easy to nail typography for a website on
 					the first try. However, we scoured the web and found
-					<strong
+					<strong class="dummy-link"
 						>this seminal bit of research from Smashing Magazine into the current, best practices of typography, </strong
 					>which are eye-opening, to say the least. We’ve dug deep into this data to present you with an authoritative
 					guide to typography best practices on the Internet. Enjoy.
 				</p>
 				<br />
-				<h3>Headings</h3>
+				<h2>Headings</h2>
+				<br />
 				<p>
 					The headings in your site copy are arguably very important because depressing research shows that the majority
-					of people only <strong>read headlines on the Internet</strong>. When user behavior is such that many of your
-					readers won’t even bother with the body copy, then you have to make the typeface of the headings really stand
-					out to grab their attention and persuade them to read further.
+					of people only <strong class="dummy-link">read headlines on the Internet</strong>. When user behavior is such
+					that many of your readers won’t even bother with the body copy, then you have to make the typeface of the
+					headings really stand out to grab their attention and persuade them to read further.
 				</p>
 				<p>
 					According to the aforementioned Smashing Magazine study from 2013, it’s almost a tie between sans-serif and
@@ -90,14 +75,17 @@
 				</p>
 				<p>
 					On the issue of popularity, the two most popular serif fonts for headlines are
-					<strong>Georgia</strong> and <strong>Chaparral Pro</strong> while the two most popular sans-serif fonts for
-					headlines are <strong>Arial</strong> and <strong>Freight Sans Pro</strong>.
+					<strong class="dummy-link">Georgia</strong> and <strong class="dummy-link">Chaparral Pro</strong> while the
+					two most popular sans-serif fonts for headlines are <strong class="dummy-link">Arial</strong> and
+					<strong class="dummy-link">Freight Sans Pro</strong>.
 				</p>
 				<p>
 					While you can certainly experiment with your own typefaces for the headings on your website, know that the
 					popularity of these fonts is because of positive feedback from readers.
 				</p>
-				<h3>Body</h3>
+				<br />
+				<h2>Body</h2>
+				<br />
 				<p>
 					The body of your website makes up the most important part of your content—even if fewer people read that than
 					the actual headings and headlines on webpages. Unlike the near tie between sans and sans-serif fonts in
@@ -110,7 +98,9 @@
 					Georgia and Chaparral Pro, almost mirroring the proportions for headings. On the sans-serif front, the most
 					frequently used sans-serif fonts for body copy are Arial and Helvetica.
 				</p>
-				<h3>An Interesting Note</h3>
+				<br />
+				<h2>An Interesting Note</h2>
+				<br />
 				<p>
 					It’s noteworthy that the study also determined that the majority of websites currently don’t use any standard
 					fonts as their main typeface. Some 39% of the body copy and 66% of the headlines in the websites looked at in
@@ -123,7 +113,9 @@
 					but many websites have boldly opted against this. They’re finding that their site visitors and readers are
 					very receptive to unconventional typefaces, so long as they don’t hurt the user experience on websites.
 				</p>
-				<h3>Backgrounds</h3>
+				<br />
+				<h2>Backgrounds</h2>
+				<br />
 				<p>
 					It goes without saying that a respectable background in web design is whatever color lets the text on it stand
 					out in contrast. This naturally makes it super-easy for site visitors to read the copy much more efficiently,
@@ -133,7 +125,7 @@
 				<p>
 					However, what’s really important to point out for the state of typography currently is that the dark-on-light
 					arrangement is getting less harsh.
-					<strong
+					<strong class="dummy-link"
 						>For instance,some websites are experimenting with a dark-gray-text-on-beige-background arrangement</strong
 					>. In such a scheme, the contrast is less pronounced, yet still provides readers with a comfortable reading
 					experience that facilitates easy scanning of every line.
@@ -146,21 +138,25 @@
 					Besides being very easy to read because of the sharp contrast, the black-on-white effect also harkens back to
 					the classic color format in newspapers, which also explains its widespread popularity in Internet body copy.
 				</p>
-				<h3>Typical Font Size for Headlines</h3>
+				<br />
+				<h2>Typical Font Size for Headlines</h2>
+				<br />
 				<p>
 					The trend is definitely bigger is better, at least as far as headlines on the web are concerned. 38 pixels is
 					the average these days when it comes to the font size for headlines. That’s actually an increase of 10 pixel
-					sizes since <strong>Smashing Magazine’s last study in 2009</strong>! Clearly, to attract mainly
-					headline-reading users, more and more websites have had to resort to boosting the size of their headline
-					pixels.
+					sizes since <strong class="dummy-link">Smashing Magazine’s last study in 2009</strong>! Clearly, to attract
+					mainly headline-reading users, more and more websites have had to resort to boosting the size of their
+					headline pixels.
 				</p>
 				<p>
-					In case you’re curious, BootstrapBay’s blog uses the <strong>Roboto</strong> font at 28 pixels for the
-					headlines, 24 pixels for the headings and 16 pixels for the body copy. It should be pointed out, though, that
-					the most frequently used font sizes for headlines range from 20 to 32 pixels, putting BootstrapBay’s blog
-					smack dab in the middle of what’s popular.
+					In case you’re curious, BootstrapBay’s blog uses the <strong class="dummy-link">Roboto</strong> font at 28
+					pixels for the headlines, 24 pixels for the headings and 16 pixels for the body copy. It should be pointed
+					out, though, that the most frequently used font sizes for headlines range from 20 to 32 pixels, putting
+					BootstrapBay’s blog smack dab in the middle of what’s popular.
 				</p>
-				<h3>Typical Font Size for Body Copy</h3>
+				<br />
+				<h2>Typical Font Size for Body Copy</h2>
+				<br />
 				<p>
 					Body copy is a different beast than headlines, so it’s no shock that the typical font size for body copy is
 					considerably smaller. However, one thing holds true, even for body copy: the general trend for the font size
@@ -168,19 +164,21 @@
 				</p>
 				<p>
 					In the study, almost the same number of websites used 14 and 16 pixels for body copy. Compared to the
-					<strong>2009 study of web typography by Smashing Magazine</strong>, this represents a noteworthy increase of
-					two pixel sizes, as most websites only used 12 and 14 pixels for body copy back then.
+					<strong class="dummy-link">2009 study of web typography by Smashing Magazine</strong>, this represents a
+					noteworthy increase of two pixel sizes, as most websites only used 12 and 14 pixels for body copy back then.
 				</p>
 				<p>
 					Again, BootstrapBay’s blog is a perfect example of a typography best practice that has evolved with the times:
 					We use 16 pixels for the body copy on our blog.
 				</p>
-				<p>
+				<p class="bonus-item">
 					<strong>Bonus Fact:</strong> The most popular (as in frequently repeated) ratio for headline to body font
 					sizes is 2.5. Basically, you take the pixel size of the headline and divide it by the pixel size of the body
 					copy to get this all-important ratio.
 				</p>
-				<h3>Body Copy Optimal Line Length</h3>
+				<br />
+				<h2>Body Copy Optimal Line Length</h2>
+				<br />
 				<p>The rule, generally speaking, is that a longer line length should equal a higher line height.</p>
 				<p>
 					When you multiply the font size of your body copy by 1.46, you’d get the optimal line height for your website.
@@ -194,7 +192,9 @@
 					Don’t, though, forget that any efficient layout needs to take into consideration margins, padding and gutters,
 					so that it doesn’t look too cluttered.
 				</p>
-				<h3>How Many Characters on Every Line?</h3>
+				<br />
+				<h2>How Many Characters on Every Line?</h2>
+				<br />
 				<p>
 					It’s important to hit that particular sweet spot in the number of characters per line for your website to look
 					aesthetically pleasing. The study found that the majority of websites today actually average 83.9 characters a
@@ -210,12 +210,13 @@
 					copy appear too small; decrease the number of characters too much, and you run the risk of swelling your body
 					copy closer to what your headline and heading sizes are.
 				</p>
-				<h3>Responsive Typography</h3>
+				<h2>Responsive Typography</h2>
+				<br />
 				<p>
 					Here’s some good news that should please those who like looking at websites across different platforms: 42% of
 					the websites in the study featured responsive typography. While that number should ideally be closer to 100%,
 					that’s really not too bad when you consider that responsive design is only about
-					<strong>four years old</strong>.
+					<strong class="dummy-link">four years old</strong>.
 				</p>
 				<p>
 					42% of the websites tested featured some form of scaling when browser sizes changed. These included both minor
@@ -228,7 +229,9 @@
 					from the users’ perspective than just having everything properly resize in their browsers. Time will tell if
 					users will continue to put up with this.
 				</p>
-				<h3>The Big Takeaways From All of This</h3>
+				<br />
+				<h2>The Big Takeaways From All of This</h2>
+				<br />
 				<p>
 					Okay, so now you know what’s up with typography in the present day. Sure, trends in web design change
 					frequently and quickly, but this study data shows that some trends are very consistent and reliable. Take, for
@@ -242,25 +245,30 @@
 					and whatnot. At the end of the day, the basics like implementing user-friendly typeface are still the most
 					important aspects of web design.
 				</p>
-				<p>Here are the typography best practices that you should leave with after reading this guide:</p>
-				<ul>
-					<li>Headlines use an approximately equal percentage of serif versus sans-serif fonts</li>
-					<li>Body copy uses more serif fonts than sans-serif fonts</li>
-					<li>Non-standard fonts dominate on websites</li>
-					<li>Backgrounds still operate on the dark-on-light color scheme</li>
-					<li>Font sizes for headlines and body copy keep increasing</li>
-					<li>No more than 84 characters per line</li>
-					<li>Just under half of all websites feature responsive typography</li>
-				</ul>
+				<br />
+				<div class="best-practice">
+					<h5>Here are the typography best practices that you should leave with after reading this guide:</h5>
+					<ul>
+						<li>Headlines use an approximately equal percentage of serif versus sans-serif fonts</li>
+						<li>Body copy uses more serif fonts than sans-serif fonts</li>
+						<li>Non-standard fonts dominate on websites</li>
+						<li>Backgrounds still operate on the dark-on-light color scheme</li>
+						<li>Font sizes for headlines and body copy keep increasing</li>
+						<li>No more than 84 characters per line</li>
+						<li>Just under half of all websites feature responsive typography</li>
+					</ul>
+				</div>
+				<br />
 				<p>
 					We hope we’ve inspired you to really think about the selection of typeface the next time you’re designing a
 					website for a new client. Typography is something that shouldn’t be rushed, and the results can be stellar
 					when you take these best practices and the user experience to heart.
 				</p>
+				<br />
 				<div class="card mb-3" style="max-width: 540px">
 					<div class="row no-gutters">
-						<div class="col-md-4">
-							<img src="assets/images/avatar.png" class="card-img" alt="Image of the author" />
+						<div class="col-md-4" id="author-image">
+							<img src="assets/images/avatar.png" class="card-img img-fluid" alt="Image of the author" />
 						</div>
 						<div class="col-md-8">
 							<div class="card-body">
@@ -273,10 +281,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="comment-wrapper">
-					<h3>Leave a Comment</h3>
-					<textarea name="Comments" id="comment-box" cols="30" rows="10"></textarea>
 				</div>
 			</div>
 		</div>

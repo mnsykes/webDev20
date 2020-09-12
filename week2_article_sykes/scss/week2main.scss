@@ -1,0 +1,59 @@
+$blue: #007bff;
+
+.navbar {
+	margin: 15px 0;
+
+	.navbar-brand {
+		font-size: 28px;
+		font-weight: bold;
+	}
+}
+
+.article {
+	box-shadow: 3px 6px 10px 10px rgba($color: #333, $alpha: 0.1);
+	margin: 0 auto;
+	padding: 50px 50px;
+	max-width: 84ch;
+
+	.lead {
+		font-size: 20px;
+		font-weight: normal;
+	}
+
+	h1 {
+		border-bottom: 4px dashed rgba($color: $blue, $alpha: 0.4);
+		font-weight: normal;
+		font-size: 45px;
+	}
+
+	h2 {
+		font-weight: bold;
+		background: linear-gradient(180deg, rgba(white, 0) 70%, rgba($blue, 0.4) 50%);
+	}
+
+	p {
+		font-weight: 350;
+		font-size: 18px;
+	}
+
+	ul {
+	}
+}
+
+.dummy-link {
+	color: #1e488f;
+}
+
+.best-practice {
+	border: 4px dashed rgba($color: $blue, $alpha: 0.4);
+	padding: 15px;
+}
+
+.bonus-item {
+	border: 4px dashed rgba($color: $blue, $alpha: 0.4);
+	padding: 15px;
+}
+
+// .card {
+
+// }

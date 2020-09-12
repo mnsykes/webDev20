@@ -1,0 +1,53 @@
+.navbar {
+  margin: 15px 0;
+}
+
+.navbar .navbar-brand {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.article {
+  -webkit-box-shadow: 3px 6px 10px 10px rgba(51, 51, 51, 0.1);
+          box-shadow: 3px 6px 10px 10px rgba(51, 51, 51, 0.1);
+  margin: 0 auto;
+  padding: 50px 50px;
+  max-width: 84ch;
+}
+
+.article .lead {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.article h1 {
+  border-bottom: 4px dashed rgba(0, 123, 255, 0.4);
+  font-weight: normal;
+  font-size: 45px;
+}
+
+.article h2 {
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(0, 123, 255, 0.4)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, rgba(0, 123, 255, 0.4) 50%);
+}
+
+.article p {
+  font-weight: 350;
+  font-size: 18px;
+}
+
+.dummy-link {
+  color: #1e488f;
+}
+
+.best-practice {
+  border: 4px dashed rgba(0, 123, 255, 0.4);
+  padding: 15px;
+}
+
+.bonus-item {
+  border: 4px dashed rgba(0, 123, 255, 0.4);
+  padding: 15px;
+}
+/*# sourceMappingURL=week2main.css.map */
