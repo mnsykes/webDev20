@@ -12,9 +12,16 @@ html {
 	z-index: 99;
 	padding: 15px;
 	border-radius: 50%;
+	background: $blue;
+	border: 1px solid $blue;
+
+	a {
+		display: block;
+		color: white;
+	}
 
 	a:hover {
-		color: white;
+		font-weight: bold;
 		text-decoration: none;
 	}
 }
@@ -66,7 +73,7 @@ html {
 	}
 
 	p {
-		font-weight: 350;
+		font-weight: 400;
 		font-size: 18px;
 	}
 

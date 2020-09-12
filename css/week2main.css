@@ -10,10 +10,17 @@ html {
   z-index: 99;
   padding: 15px;
   border-radius: 50%;
+  background: #007bff;
+  border: 1px solid #007bff;
+}
+
+#home-btn a {
+  display: block;
+  color: white;
 }
 
 #home-btn a:hover {
-  color: white;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -68,7 +75,7 @@ html {
 }
 
 .article p {
-  font-weight: 350;
+  font-weight: 400;
   font-size: 18px;
 }
 

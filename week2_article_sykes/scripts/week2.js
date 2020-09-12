@@ -1,4 +1,4 @@
-homeBtn = document.getElementById("home-btn");
+const homeBtn = document.getElementById("home-btn");
 
 window.addEventListener("scroll", showBtn);
 
