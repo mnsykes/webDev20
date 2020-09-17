@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../week4/scss/week4main.scss"
+    ],
+    "names": [],
+    "file": "week4main.css"
+}
