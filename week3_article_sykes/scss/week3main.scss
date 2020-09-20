@@ -1,7 +1,9 @@
-$blue: #007bff;
-
 html {
 	scroll-behavior: smooth;
+}
+
+body {
+	background: rgb(240, 240, 240);
 }
 
 #home-btn {
@@ -12,8 +14,8 @@ html {
 	z-index: 99;
 	padding: 15px;
 	border-radius: 50%;
-	background: $blue;
-	border: 1px solid $blue;
+	background: #007bff;
+	border: 1px solid #007bff;
 
 	a {
 		display: block;
@@ -27,29 +29,43 @@ html {
 }
 
 .navbar {
-	margin: 15px 0;
+	background: #ff9a8a;
 
 	.navbar-brand {
-		font-size: 28px;
-		font-weight: bold;
+		font-family: "Sedgwick Ave Display", cursive;
+		font-size: 48px;
+		color: #fdfdfe;
+	}
+
+	button {
+		color: #fdfdfe;
 	}
 }
 
 .article {
 	box-shadow: 3px 6px 10px 10px rgba($color: #333, $alpha: 0.1);
-	margin: 0 auto;
 	padding: 50px 50px;
-	max-width: 70%;
-	// max-width: 84ch;
+	background: #fdfdfe;
 }
 
 .article-wrapper {
-	max-width: 80%;
 	margin: 0 auto;
+	max-width: 84ch;
+
+	.header-image {
+		text-align: center;
+		width: 100%;
+		height: 300px;
+
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
 
 	.lead {
 		font-size: 20px;
-		font-weight: normal;
+		font-weight: bold;
 	}
 
 	h1 {
@@ -62,8 +78,6 @@ html {
 	}
 
 	p {
-		margin: 0 auto;
-		max-width: 84ch;
 		font-weight: 400;
 		font-size: 18px;
 	}
@@ -77,18 +91,11 @@ html {
 		}
 	}
 
-	// .bonus-item,
-	// .best-practice {
-	// 	background: rgba($color: $blue, $alpha: 0.1);
-	// 	box-shadow: 5px 5px 10px 2px rgba($color: #333, $alpha: 0.2);
-	// 	padding: 15px;
-	// }
-
 	.note,
 	.bonus-item,
 	.best-practice {
-		background: rgba($color: $blue, $alpha: 0.1);
-		box-shadow: 5px 5px 10px 2px rgba($color: #333, $alpha: 0.2);
+		background: rgba($color: #ff9a8a, $alpha: 0.2);
+		box-shadow: 5px 5px 10px 2px rgba($color: #ff9a8a, $alpha: 0.8);
 		padding: 15px;
 		max-width: 90%;
 		margin: 0 auto;
@@ -103,15 +110,17 @@ html {
 	}
 
 	.card {
+		background: #fdfdfe;
 		border: none;
+		border-left: 25px solid #ff9a8a;
 
 		.col-md-2 {
-			padding-top: 20px;
-		}
+			padding: 20px 10px;
 
-		.card-img {
-			max-width: 100%;
-			height: auto;
+			img {
+				max-height: 150px;
+				max-width: 150px;
+			}
 		}
 
 		.social {
@@ -125,11 +134,8 @@ html {
 
 			img:hover {
 				transform: scale(1.1);
+				cursor: pointer;
 			}
-		}
-
-		h5 {
-			background: linear-gradient(180deg, rgba(white, 0) 70%, rgba($blue, 0.4) 50%);
 		}
 
 		p {
