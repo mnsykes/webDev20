@@ -14,11 +14,8 @@ body {
 	z-index: 99;
 	padding: 15px;
 	border-radius: 50%;
-	background: #007bff;
-	border: 1px solid #007bff;
 
 	a {
-		display: block;
 		color: white;
 	}
 
@@ -29,6 +26,8 @@ body {
 }
 
 .navbar {
+	top: 0;
+	position: sticky;
 	background: #ff9a8a;
 
 	.navbar-brand {
@@ -50,6 +49,7 @@ body {
 
 .article-wrapper {
 	margin: 0 auto;
+	padding-top: 75px;
 	max-width: 84ch;
 
 	.header-image {
