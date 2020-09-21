@@ -1,0 +1,5 @@
+[] Download images from site
+  [x] Homepage
+[] Copy text from site
+  []
+[] Framework for new Homepage

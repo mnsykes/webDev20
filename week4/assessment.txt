@@ -1,0 +1,69 @@
+Areas of improvement - Site:
+  - Branding
+  - Navigation
+    * Remove all dropdown links
+  - Social media presence should be more visible
+  - Needs Contact/Get In Touch page
+  - More focus on Contribute and Mailing List
+  - More focus on the Farm Stand
+  - Drab color scheme
+  - Lack of visual hierarchy
+  - Outdated look
+  - Consolidation:  Information needs to be concentrated
+     1. Too many links
+     2. Too many pages
+     3. Too many pages with similar content
+
+***Check pages for dates. Some pages may be outdated and no longer relevant.***
+
+Homepage: 
+  - Modal on load addressing covid
+  - Lacking call to action
+  - Mission statement to be focal point
+    * Stronger statement about the organization should be made on the Homepage
+      The message is spread throughout the site and it's not as powerful
+  - Too much info not related to the organization
+  - Email address at bottom of page is not a link to an email form
+  - Garlic varieties and pricing should be modal form rather than pdf
+  - Enjoy this list link also should not be pdf
+  - Recipes for Wellness Booklet out of place
+  - Garlic festival needs it's own focus
+  - Seeds of Solidarity Education Center message at bottom of page is confusing
+    * Is it part of the farm?
+    * Contributors to the program are separated by the book advertisement
+  
+
+About:
+  - Pages can be consolidated
+  - Sacred Ramblings blog post shouldn't be buried in the bottom of the About section
+  - Awards are buried in Staff, Supporters and Board
+
+Education:
+  - All programs on one page
+  - Call to action for Application
+  - School Gardens:
+    * Is program still going on? Last referenced 2013
+    * Make downloadable projects more visible
+
+The Farm:
+  - Volunteering opportunities buried in this section
+
+Publications and Media:
+  - Organize page by types of media
+
+Mailing List:
+  - Form shouldn't go to external site
+  - Modernize form
+
+Contribute:
+  - Modernize form
+
+Directions:
+ - Consider making a Contact page and move Directions there
+
+
+ Areas of Strength: 
+  - Lots of valuable information about the farm and the organization
+  - 
+
+  

@@ -1,1 +1,7 @@
-/* No CSS *//*# sourceMappingURL=week4main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=week4main.css.map */
