@@ -3,3 +3,38 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.home-wrapper {
+	height: 100vh;
+	background: url(../week4/assets/images/bruno-neurath-wilson-UWIFg_DCusI-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+nav {
+	background: rgba($color: green, $alpha: 0.3);
+
+	.nav-links-list {
+		border: 2px solid white;
+		display: flex;
+		padding: 20px;
+
+		.nav-link {
+			margin-right: 20px;
+			font-size: 1.5rem;
+
+			a {
+				color: rgba($color: white, $alpha: 0.7);
+			}
+		}
+	}
+}

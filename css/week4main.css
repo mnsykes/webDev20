@@ -4,4 +4,41 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home-wrapper {
+  height: 100vh;
+  background: url(../week4/assets/images/bruno-neurath-wilson-UWIFg_DCusI-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  background: rgba(0, 128, 0, 0.3);
+}
+
+nav .nav-links-list {
+  border: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+
+nav .nav-links-list .nav-link {
+  margin-right: 20px;
+  font-size: 1.5rem;
+}
+
+nav .nav-links-list .nav-link a {
+  color: rgba(255, 255, 255, 0.7);
+}
 /*# sourceMappingURL=week4main.css.map */

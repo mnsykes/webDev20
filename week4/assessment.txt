@@ -2,6 +2,7 @@ Areas of improvement - Site:
   - Branding
   - Navigation
     * Remove all dropdown links
+  - Add Blog
   - Social media presence should be more visible
   - Needs Contact/Get In Touch page
   - More focus on Contribute and Mailing List
@@ -17,6 +18,7 @@ Areas of improvement - Site:
 ***Check pages for dates. Some pages may be outdated and no longer relevant.***
 
 Homepage: 
+  - Simplify the homepage
   - Modal on load addressing covid
   - Lacking call to action
   - Mission statement to be focal point
@@ -25,7 +27,7 @@ Homepage:
   - Too much info not related to the organization
   - Email address at bottom of page is not a link to an email form
   - Garlic varieties and pricing should be modal form rather than pdf
-  - Enjoy this list link also should not be pdf
+  - 'Enjoy This Link' link also should not be pdf
   - Recipes for Wellness Booklet out of place
   - Garlic festival needs it's own focus
   - Seeds of Solidarity Education Center message at bottom of page is confusing
@@ -64,6 +66,5 @@ Directions:
 
  Areas of Strength: 
   - Lots of valuable information about the farm and the organization
-  - 
 
   
