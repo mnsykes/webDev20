@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACC,QADO,CACP,GAAG,CAAC;EACH,SAAS,EAAE,MAAM;CACjB",
+    "sources": [
+        "../week5/scss/week5main.scss"
+    ],
+    "names": [],
+    "file": "week5main.css"
+}

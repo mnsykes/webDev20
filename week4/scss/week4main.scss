@@ -15,7 +15,6 @@ a {
 .home-wrapper {
 	height: 100vh;
 	background: url(../week4/assets/images/pexels-binyamin-mellish-169523.jpg);
-	background-color: black;
 	background-blend-mode: screen;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -27,7 +26,7 @@ a {
 	height: 100vh;
 	width: 100vw;
 	position: fixed;
-	top: 0;
+	bottom: 0;
 	left: 0;
 	background: rgba($color: #000000, $alpha: 0.5);
 	text-align: center;
@@ -45,7 +44,7 @@ nav {
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	background: rgba($color: rgb(80, 206, 101), $alpha: 0.4);
+	background: rgba($color: green, $alpha: 0.4);
 	width: 100vw;
 
 	.nav-links-list {

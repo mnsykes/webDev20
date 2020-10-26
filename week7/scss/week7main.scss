@@ -1,0 +1,569 @@
+// Variables
+$yellow: #f1cf69;
+$green: #87b499;
+$dark-green: #465649;
+
+// Global
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	// overflow: hidden;
+	font-family: sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+// header with navigation
+.header {
+	background: rgba($color: $dark-green, $alpha: 0.4);
+	height: 4rem;
+	display: grid;
+	grid-template-columns: 30% 70%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	.logo {
+		display: flex;
+		align-items: center;
+
+		h2 {
+			margin-left: 1rem;
+			font-size: 2rem;
+			color: $yellow;
+
+			&:hover {
+				color: white;
+				border-bottom: 2px solid $yellow;
+			}
+		}
+	}
+
+	.nav-links-area {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		margin-right: 1rem;
+
+		.nav-links {
+			a {
+				font-size: 1.2rem;
+				margin-left: 1rem;
+				color: white;
+				font-weight: bold;
+				text-transform: uppercase;
+
+				&:hover {
+					color: $yellow;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+// Landing page styles
+#landing-page-container {
+	background: url(../week7/assets/images/ghwithclass.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+
+	// call to action
+	.cta {
+		height: 100%;
+		background: rgba($color: $dark-green, $alpha: 0.2);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		h1 {
+			color: rgba($color: white, $alpha: 1);
+			text-shadow: #333;
+			font-size: 6rem;
+			font-family: sans-serif;
+			font-weight: bold;
+		}
+
+		button {
+			outline: none;
+			border: none;
+			background: $yellow;
+			color: #333;
+			padding: 1.3rem 3rem;
+			font-size: 1.2rem;
+			cursor: pointer;
+
+			&:hover {
+				background: rgba($color: $yellow, $alpha: 0.9);
+				color: white;
+			}
+		}
+	}
+}
+// end landing page styles
+
+// Home container styles
+#home-container {
+	height: 100vh;
+	width: 100vw;
+
+	.carousel {
+		max-width: 70vw;
+		position: relative;
+		margin: auto;
+
+		.carousel-item {
+			display: none;
+		}
+
+		.previous,
+		.next {
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			width: auto;
+			margin-top: -22px;
+			padding: 16px;
+			color: white;
+			font-weight: bold;
+			font-size: 18px;
+			transition: 0.6s ease;
+			border-radius: 0 3px 0 3px;
+			user-select: none;
+		}
+
+		.next {
+			right: 0;
+			border-radius: 3px 0 0 3px;
+		}
+
+		.carousel-text {
+			color: #333;
+			padding: 8px 12px;
+			position: absolute;
+			bottom: 8px;
+			width: 100;
+			text-align: center;
+		}
+
+		.dot {
+			cursor: pointer;
+			height: 1rem;
+			width: 1rem;
+			margin: 0 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+
+			&:hover {
+				background: #717171;
+			}
+		}
+	}
+	// 	.info-cards {
+	// 		display: grid;
+	// 		grid-template-columns: repeat(3, 1fr);
+	// 	}
+	// }
+
+	// .sidebar {
+	// 	margin-top: 5rem;
+	// }
+}
+// end home container styles
+
+// Farm container styles
+#farm-container {
+	height: 100vh;
+	width: 100vw;
+	padding: 5rem 5rem 5rem 5rem;
+	display: grid;
+	grid-template-columns: 1fr;
+
+	.farm-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 1rem 0;
+		border-top: 3px solid $dark-green;
+		border-bottom: 3px solid $dark-green;
+
+		.farm-copy {
+			padding: 0 4rem;
+
+			h1 {
+				color: #333;
+				font-weight: bold;
+				font-size: 3rem;
+			}
+
+			p {
+				color: #333;
+				font-size: 1.1rem;
+			}
+		}
+
+		.farm-image {
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	// Info boxes
+	.info-boxes {
+		margin-top: 2rem;
+		display: grid;
+		grid-gap: 2rem;
+		grid-template-columns: repeat(3, 1fr);
+
+		.box {
+			height: 100%;
+			padding: 2rem 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background: $dark-green;
+			cursor: pointer;
+			box-shadow: 6px 5px 20px 2px rgba(51, 51, 51, 0.1);
+
+			&:hover {
+				background: rgba($color: $dark-green, $alpha: 0.8);
+			}
+
+			h3 {
+				color: $green;
+				font-weight: bold;
+				font-size: 1.7rem;
+			}
+		}
+
+		i {
+			font-size: 6rem;
+			color: $yellow;
+		}
+	}
+	// end info boxes
+}
+// end farm container styles
+
+// Get involved container styles
+#involved-container {
+	background: white;
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 1fr;
+
+	h1 {
+		padding-top: 15rem;
+		font-size: 8rem;
+		text-align: center;
+	}
+}
+// end get involved container styles
+
+// Blog container styles
+#blog-container {
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 1fr;
+
+	h1 {
+		padding-top: 15rem;
+		font-size: 8rem;
+		text-align: center;
+	}
+}
+// end blog contaier styles
+
+// About container styles
+#about-container {
+	height: 100vh;
+	width: 100vw;
+	padding: 5rem 5rem;
+	display: grid;
+	grid-template-columns: 1fr;
+
+	.about-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 1rem 0;
+		border-top: 3px solid $dark-green;
+		border-bottom: 3px solid $dark-green;
+
+		.about-image {
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.about-copy {
+			padding: 0 4rem;
+			display: flex;
+			flex-direction: column;
+
+			h1 {
+				color: #333;
+				font-weight: bold;
+				font-size: rem;
+			}
+
+			p {
+				color: #333;
+				font-size: 1.1rem;
+			}
+		}
+
+		// table styles
+		.table {
+			padding: 1rem;
+			margin-top: 2rem;
+			border: 1px solid $dark-green;
+			background: rgba($color: $yellow, $alpha: 0.5);
+			.support {
+				font-size: 0.5rem;
+
+				th {
+					text-align: left;
+				}
+			}
+		}
+		// end table styles
+	}
+
+	// Info boxes
+	.about-boxes {
+		margin-top: 2rem;
+		display: grid;
+		grid-gap: 2rem;
+		grid-template-columns: repeat(3, 1fr);
+
+		.about-box {
+			height: 100%;
+			padding: 2rem 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background: $dark-green;
+			cursor: pointer;
+			box-shadow: 6px 5px 20px 2px rgba(51, 51, 51, 0.1);
+
+			&:hover {
+				background: rgba($color: $dark-green, $alpha: 0.8);
+			}
+
+			h3 {
+				color: $green;
+				font-weight: bold;
+				font-size: 1.7rem;
+			}
+		}
+
+		i {
+			font-size: 6rem;
+			color: $yellow;
+		}
+	}
+	// end info boxes
+}
+// end about container styles
+
+// Contact container styles
+#contact-container {
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 1fr;
+	padding-top: 5rem;
+
+	// Grid container for contact map and form
+	.contact {
+		height: 100%;
+		padding: 0 5rem;
+		display: grid;
+		grid-template-columns: 1fr;
+
+		// map area - top
+		.map {
+			height: 100%;
+			max-width: 100%;
+			box-shadow: 6px 5px 20px 2px rgba(51, 51, 51, 0.1);
+
+			iframe {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		// end map
+
+		// contact area - bottom
+		.contact-area {
+			border-top: 2px solid $dark-green;
+			border-bottom: 2px solid $dark-green;
+			margin: 2rem 0;
+			display: grid;
+			grid-template-columns: 65% 35%;
+			grid-gap: 1rem;
+
+			// form area - left side
+			form {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				box-shadow: 6px 5px 20px 2px rgba(51, 51, 51, 0.1);
+
+				.form-head {
+					font-size: 1.7rem;
+				}
+
+				.contact-input {
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+
+					.inputs {
+						display: flex;
+					}
+
+					i {
+						background: $dark-green;
+						font-size: 1rem;
+						color: $yellow;
+						margin: 0.3rem 0;
+						padding: 0.7rem;
+						width: 3rem;
+						height: auto;
+						text-align: center;
+					}
+
+					input {
+						margin: 0.3rem 0;
+						width: 100%;
+						padding: 0.7rem;
+						border: none;
+						box-shadow: 6px 5px 20px 2px rgba(51, 51, 51, 0.1);
+					}
+				}
+
+				.contact-textarea {
+					textarea {
+						padding: 0.7rem;
+						border: none;
+						width: 100%;
+						box-shadow: 6px 5px 20px 2px rgba(51, 51, 51, 0.1);
+					}
+
+					.contact-button {
+						button {
+							width: 100%;
+							border: none;
+							outline: none;
+							background: $yellow;
+							font-size: 1.5rem;
+							padding: 0.5rem;
+							margin-bottom: 0.3rem;
+						}
+					}
+				}
+			}
+			// end form area left side
+
+			// contact info - right side
+			.contact-info {
+				display: flex;
+				flex-direction: column;
+				width: 99%;
+				justify-content: center;
+				align-items: center;
+				margin: 0 auto;
+
+				.contact-grid {
+					display: flex;
+					flex-direction: column;
+					padding: 1rem 3rem;
+					background: white;
+					height: 100%;
+					box-shadow: 6px 5px 20px 2px rgba(51, 51, 51, 0.1);
+
+					.contact-address {
+						width: 100%;
+						border-bottom: 2px solid $dark-green;
+						margin-bottom: 3rem;
+						padding-bottom: 4rem;
+
+						h3 {
+							font-size: 1.57rem;
+							margin-bottom: 1.5rem;
+							color: #333;
+							font-weight: bold;
+						}
+
+						p {
+							font-size: 1.1rem;
+							color: #333;
+						}
+					}
+
+					.contact-social {
+						width: 100%;
+						font-size: 3rem;
+						text-align: center;
+						color: $dark-green;
+					}
+				}
+			}
+			// end contact info right side
+		}
+		// end contact area bottom
+		// Footer
+		.footer {
+			height: 100%;
+			width: 100%;
+			background: rgba($color: $dark-green, $alpha: 1);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 3rem;
+
+			h3 {
+				color: $yellow;
+			}
+
+			p {
+				color: white;
+			}
+
+			.social-footer {
+				display: flex;
+				justify-content: space-between;
+
+				i {
+					margin: 0 1.5rem;
+					font-size: 1.5rem;
+					color: $yellow;
+				}
+			}
+		}
+		// End contact grid area
+	}
+	// end contact container styles
+}

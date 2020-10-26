@@ -1,0 +1,19 @@
+Progress
+
+- Added Bootstrap for grid
+  - Refactored SCSS file to overwrite a lot of Bootstrap styles
+
+- Home Page
+  - Added Carousel
+  - Added sidebar with donation button, newsletter subscribe button, table for events
+    - Modals for Subscribe and Donate
+    - Donate modal includes form
+  - Info Cards
+
+To Do 
+
+- CHOOSE A TYPEFACE
+
+- Blue text decoration under Seeds of Solidarity in nav
+  - how to overwrite since I already have a css rule?
+

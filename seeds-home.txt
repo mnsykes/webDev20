@@ -1,0 +1,47 @@
+Current layout: 
+
+Home:
+  - Opening message
+
+    In these times and all times, we extend strength, wellness, and resilience to you and yours. 
+    We have developed many resource materials to regenerate soil, restore climate and revitalize community. 
+    Peruse archived newsletters rich with ideas and inspiration, watch our  Video on the No-till Cardboard Method 
+    and find many more free guides and articles throughout our website. Plus, be inspired by our new book! 
+
+  - Garlic Saturdays
+    *PDF price list
+
+  - Garlic Festival 
+    * Link to site
+    * PDF list of farm stands and markets
+
+  - Recipes for Wellness e-book
+    * PDF link 
+    * Covid disclaimer
+  
+  - Seeds of Solidarity Education Center
+    * Paragraph describing program
+
+  - Link to new book -- Making Love While Farming
+    * Link to makinglovewhilefarming.org
+    * Link to levellerspress.com
+
+  - Seeds of Solidarity Education Center donor list
+
+  - Events link -- internal link to workshops and Events
+
+  - Closing message:
+
+    Get Info on our events like our Solidarity Saturday visiting days and Grow Food Everywhere workshops. -- internal link to workshops and events 
+
+    We provide consulting on educational program development and regenerative, no-till farming methods, and offer keynotes at conferences. 
+    Please contact solidarity@ seedsofsolidarity.org regarding fees. -- dead email link 
+
+    We are truly grateful for your interest in our organization and farm! 
+
+  - Icon links
+    * Twitter
+    * Facebook
+    * Email 
+    * Print 
+

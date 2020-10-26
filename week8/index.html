@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://kit.fontawesome.com/c864577d8c.js" crossorigin="anonymous"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+			integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="../css/week8main.css" />
+
+		<title>Seeds of Solidarity | Home</title>
+	</head>
+	<body>
+		<!-- BODY CONTAINER -->
+		<div class="container-fluid">
+			<!-- HEADER WITH NAVIGATION -->
+			<!-- style navbar
+					 missing hamburger menu
+					change opacity -->
+			<nav class="navbar fixed-top navbar-expand-lg">
+				<a class="navbar-brand" href="#landing-page-container">Seeds of Solidarity</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#home-container"
+								>Home<span class="sr-only">(current)</span></a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#farm-container">The Farm</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#involved-container">Get Involved</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#blog-container">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about-container">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact-container">Contact</a>
+						</li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0">
+						<input
+							class="form-control mr-sm-2"
+							type="search"
+							placeholder="Search"
+							aria-label="Search"
+						/>
+						<button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
+					</form>
+				</div>
+			</nav>
+			<!-- END HEADER -->
+
+			<!-- LANDING PAGE CONTAINER -->
+			<!-- make text responsive -->
+			<div id="landing-page-container">
+				<!-- Call to action -->
+				<div class="cta">
+					<h1>Grow Food Everywhere</h1>
+					<a href="#home-container">
+						<button id="homebtn" type="submit">Learn More</button>
+					</a>
+				</div>
+				<!-- End call to action -->
+			</div>
+			<!-- END LANDING PAGE -->
+
+			<!-- HOME PAGE CONTAINER -->
+			<div id="home-container">
+				<!-- Home grid container left side main content right side sidebar -->
+				<div class="home-grid row">
+					<!--  Home grid container for carousel and info cards -->
+					<div class="home-main col-sm-12 col-md-8 row">
+						<!-- Carousel container -->
+						<div id="carouselExampleControls" class="carousel slide col-sm-12" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="../assets/images/deb.jpg" class="d-block w-100" alt="..." />
+									<div class="carousel-caption d-none d-md-block text-right font-weight-bolder">
+										<h4>First News Story</h4>
+										<p>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit totam
+											tempore veritatis fugiat odio voluptatum ad quaerat autem iure voluptatibus?
+										</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img src="../assets/images/workshop-circle.jpg" class="d-block w-100" alt="..." />
+									<div class="carousel-caption d-none d-md-block text-right font-weight-bolder">
+										<h4>Second News Story</h4>
+										<p>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit totam
+											tempore veritatis fugiat odio voluptatum ad quaerat autem iure voluptatibus?
+										</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img
+										src="../assets/images/307adf91ef554776910a356c93e77570.jpg"
+										class="d-block w-100"
+										alt="..."
+									/>
+									<div
+										class="carousel-caption d-none d-md-block text-right text-white font-weight-bolder"
+									>
+										<h4>Third News Story</h4>
+										<p>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit totam
+											tempore veritatis fugiat odio voluptatum ad quaerat autem iure voluptatibus?
+										</p>
+									</div>
+								</div>
+							</div>
+							<a
+								class="carousel-control-prev"
+								href="#carouselExampleControls"
+								role="button"
+								data-slide="prev"
+							>
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a
+								class="carousel-control-next"
+								href="#carouselExampleControls"
+								role="button"
+								data-slide="next"
+							>
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+						<!-- End carousel -->
+
+						<!-- Info cards -->
+						<div class="info-cards col-sm-12 row">
+							<div class="card col-sm-12 col-md-4">
+								<div class="info-card-img">
+									<a href="#">
+										<i class="fas fa-newspaper"></i>
+									</a>
+								</div>
+								<div class="about-box-text">
+									<h3>News</h3>
+								</div>
+							</div>
+							<div class="card col-sm-12 col-md-4">
+								<div class="info-card-img">
+									<a href="#">
+										<i class="fas fa-carrot"></i>
+									</a>
+								</div>
+								<div class="info-card-text">
+									<h3>Farmstand</h3>
+								</div>
+							</div>
+							<div class="card col-sm-12 col-md-4">
+								<div class="info-card-img">
+									<a href="#">
+										<i class="fas fa-book"></i>
+									</a>
+								</div>
+								<div class="info-card-text">
+									<h3>Buy Our New Book</h3>
+								</div>
+							</div>
+						</div>
+						<!-- end info cards -->
+					</div>
+					<!-- End home container -->
+
+					<!-- Sidebar -->
+					<div class="sidebar col-sm-12 col-md-4">
+						<!-- Link to form will open in modal Thank you message after donation-->
+						<div class="donate">
+							<h3>Help Our Cause</h3>
+							<button data-toggle="modal" data-target="#donate-modal">Donate</button>
+							<div class="modal" id="donate-modal" tabindex="-1" role="dialog">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title">Modal title</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<form>
+												<div class="form-row">
+													<div class="form-group col-md-6">
+														<label for="fName">First Name</label>
+														<input type="text" class="form-control" name="fName" id="fName" />
+													</div>
+													<div class="form-group col-md-6">
+														<label for="lName">Last Name</label>
+														<input type="text" class="form-control" name="lName" id="lName" />
+													</div>
+												</div>
+												<div class="form-group">
+													<label for="inputAddress">Address</label>
+													<input
+														type="text"
+														class="form-control"
+														id="inputAddress"
+														placeholder="1234 Main St"
+													/>
+												</div>
+												<div class="form-group">
+													<label for="inputAddress2">Address 2</label>
+													<input
+														type="text"
+														class="form-control"
+														id="inputAddress2"
+														placeholder="Apartment, studio, or floor"
+													/>
+												</div>
+												<div class="form-row">
+													<div class="form-group col-md-6">
+														<label for="inputCity">City</label>
+														<input type="text" class="form-control" id="inputCity" />
+													</div>
+													<div class="form-group col-md-4">
+														<label for="inputState">State</label>
+														<select id="inputState" class="form-control">
+															<option selected>Choose...</option>
+															<option>...</option>
+														</select>
+													</div>
+													<div class="form-group col-md-2">
+														<label for="inputZip">Zip</label>
+														<input type="text" class="form-control" id="inputZip" />
+													</div>
+												</div>
+											</form>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary">Save changes</button>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">
+												Close
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="subscribe">
+							<h3>Subscribe to Our Newsletter</h3>
+							<input type="email" name="email" placeholder="Enter your email" />
+							<button type="submit" data-toggle="modal" data-target="#newsletter-modal">OK</button>
+							<div class="modal" id="newsletter-modal" tabindex="-1" role="dialog">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title">Modal title</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<h4>Thank you for subscribing!</h4>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">
+												Close
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="events">
+							<div class="upcoming">
+								<h3>Upcoming Events</h3>
+								<table class="table table-hover">
+									<thead>
+										<tr>
+											<th scope="col">Date</th>
+											<th scope="col">Event Description</th>
+										</tr>
+									</thead>
+									<tr>
+										<td>
+											<i class="fas fa-calendar"></i>
+										</td>
+										<td>Event Listing</td>
+									</tr>
+									<tr>
+										<td>
+											<i class="fas fa-calendar"></i>
+										</td>
+										<td>Event Listing</td>
+									</tr>
+									<tr>
+										<td>
+											<i class="fas fa-calendar"></i>
+										</td>
+										<td>Event Listing</td>
+									</tr>
+									<tr>
+										<td>
+											<i class="fas fa-calendar"></i>
+										</td>
+										<td>Event Listing</td>
+									</tr>
+									<tr>
+										<td>
+											<i class="fas fa-calendar"></i>
+										</td>
+										<td>Event Listing</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- End sidebar -->
+				</div>
+				<!-- End home grid container for main and sidebar -->
+			</div>
+			<!-- END HOME PAGE -->
+
+			<!-- FARM CONTAINER -->
+			<div id="farm-container">
+				<!-- Farm content -->
+				<div class="farm-content row">
+					<!-- Farm copy -->
+					<div class="farm-copy col-md-6 col-sm-12">
+						<h1>The Farm</h1>
+						<br />
+						<p>
+							Seeds of Solidarity Farm was initiated in 1996, on land in the middle of the forest
+							that had not been cultivated for many years, and the original inhabitants of the
+							region being the Wampanoag, Nipmuc, and Pequoit people. A conservation restriction on
+							our 30 acres ensures the land will always be used for agriculture, education, and
+							wildlife habitat. With nature as teacher, the land has been transformed into fertile
+							fields and hosts 5 solar hoophouses brimming with our signature greens, fruit and
+							perennial crops, garlic and sacred, traditional crops such as Hopi blue and
+							Narraganset flour corn. The tapestry of our site includes energy efficient and off the
+							grid home, office, and farm outbuildings, including
+							<a href="#">Solidarity Handworks</a>, a solar powered farmstand, and celebration art
+							and words of inspiration along the paths.
+						</p>
+					</div>
+					<!-- end farm copy -->
+
+					<!-- Farm image -->
+					<div class="farm-image col-md-6 col-sm-12">
+						<img src="../week7/assets/images/ricky4.jpg" alt="" />
+					</div>
+				</div>
+				<!-- End farm body content -->
+
+				<!-- Farm info boxes link to more info -->
+				<div class="info-boxes-area row">
+					<div class="info-boxes col-sm-12 row">
+						<div class="box col-sm-12 col-md-4">
+							<div class="box-img">
+								<a href="#">
+									<i class="fas fa-seedling"></i>
+								</a>
+							</div>
+							<div class="box-text">
+								<h3>What we grow</h3>
+							</div>
+						</div>
+						<div class="box col-sm-12 col-md-4">
+							<div class="box-img">
+								<a href="#">
+									<i class="fas fa-sun"></i>
+								</a>
+							</div>
+							<div class="box-text">
+								<h3>How we grow it</h3>
+							</div>
+						</div>
+						<div class="box col-sm-12 col-md-4">
+							<div class="box-img">
+								<a href="#">
+									<i class="fas fa-solar-panel"></i>
+								</a>
+							</div>
+							<div class="box-text">
+								<h3>How we save energy</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End farm info boxes -->
+			</div>
+			<!-- END FARM -->
+
+			<!-- GET INVOLVED CONTAINER -->
+			<div class="" id="involved-container">
+				<div class="row"></div>
+				<div class="row"></div>
+			</div>
+			<!-- END GET INVOLVED -->
+
+			<!-- BLOG CONTAINER -->
+			<div class="" id="blog-container">
+				<h1>Coming Soon</h1>
+			</div>
+			<!-- END BLOG CONTAINER -->
+
+			<!-- ABOUT CONTAINER -->
+			<div id="about-container">
+				<!-- About content -->
+				<div class="about-content row">
+					<!-- image -->
+					<div class="about-image col-sm-12 col-md-6">
+						<img src="../week7/assets/images/debandrick.jpg" alt="" />
+					</div>
+					<!-- end image -->
+					<!-- About copy -->
+					<div class="about-copy col-sm-12 col-md-6">
+						<!-- Para container -->
+						<div class="para">
+							<h1>About Us</h1>
+							<p>
+								Seeds of Solidarity was founded by Ricky Baruc and Deb Habib who met in 1984 while
+								working at the New Alchemy Institute on Cape Cod MA, a small international
+								organization whose purpose was to “design human-scale, low polluting alternatives to
+								super technology and to design and test intensive food growing methods.” New
+								Alchemy’s impact on Ricky and Deb’s lives and that of many others was profound. They
+								spent the next decade or so farming (Ricky) and working in the fields of
+								multicultural and environmental education (Deb). Then in 1994/1995 took part in the
+								International Pilgrimage for Peace and Life, walking from Auschwitz to Hiroshima.
+								Seeds of Solidarity Farm and Education Center was initiated in 1996, in the spirit
+								of New Alchemy and in honor of those around the world helping to feed the people.
+							</p>
+						</div>
+						<!-- end para container -->
+					</div>
+					<!-- end about copy -->
+				</div>
+				<!-- end about content -->
+
+				<!-- Info boxes -->
+				<div class="about-boxes-area row">
+					<div class="about-boxes col-sm-12 row">
+						<div class="about-box col-sm-12 col-md-4">
+							<div class="about-box-img">
+								<a href="#">
+									<i class="fas fa-history"></i>
+								</a>
+							</div>
+							<div class="about-box-text">
+								<h3>Our History</h3>
+							</div>
+						</div>
+						<div class="about-box col-sm-12 col-md-4">
+							<div class="about-box-img">
+								<a href="#">
+									<i class="fas fa-users"></i>
+								</a>
+							</div>
+							<div class="about-box-text">
+								<h3>Our Staff</h3>
+							</div>
+						</div>
+						<div class="about-box col-sm-12 col-md-4">
+							<div class="about-box-img">
+								<a href="#">
+									<i class="fas fa-hands-helping"></i>
+								</a>
+							</div>
+							<div class="about-box-text">
+								<h3>Our Supporters</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end info boxes -->
+			</div>
+			<!-- END ABOUT CONTAINER -->
+
+			<!-- CONTACT CONTAINER -->
+			<div id="contact-container">
+				<!-- Grid container for contact map and form -->
+				<div class="contact row">
+					<!-- Map -->
+					<div class="map embed-responsive col-sm-12">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.226510334349!2d-72.34563968453766!3d42.550482979174625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e137ef5a4d2bfd%3A0x30f64a0ca5a131fd!2s165%20Chestnut%20Hill%20Rd%2C%20Orange%2C%20MA%2001364!5e0!3m2!1sen!2sus!4v1603107205980!5m2!1sen!2sus"
+							width="1000"
+							height="320"
+							frameborder="0"
+							style="border: 0"
+							allowfullscreen=""
+							aria-hidden="false"
+							tabindex="0"
+						></iframe>
+					</div>
+					<!-- End map -->
+
+					<div class="contact-area col-sm-12 row">
+						<!-- Form -->
+						<div class="form-grid col-sm-12 col-md-9">
+							<form action="">
+								<div class="form-head">Get In Touch With Us</div>
+								<div class="contact-input">
+									<div class="inputs">
+										<i class="fas fa-user"></i>
+										<input type="text" name="name" placeholder="Enter your name" />
+									</div>
+									<div class="inputs">
+										<i class="fas fa-envelope"></i>
+										<input type="email" name="email" placeholder="Enter your email" />
+									</div>
+									<div class="inputs">
+										<i class="fas fa-phone"></i>
+										<input type="text" placeholder="Enter your phone number" />
+									</div>
+								</div>
+
+								<!-- Text area -->
+								<div class="contact-textarea">
+									<textarea
+										name="message"
+										id="message"
+										cols="100"
+										rows="10"
+										placeholder="Enter your message"
+									></textarea>
+									<div class="contact-button">
+										<button type="submit">Submit</button>
+									</div>
+								</div>
+								<!-- End text area -->
+							</form>
+						</div>
+						<!-- End form -->
+
+						<div class="contact-info col-sm-12 col-md-3">
+							<div class="contact-grid">
+								<div class="contact-address">
+									<h3>Seeds of Solidarity</h3>
+									<p>165 Chestnut Hill Rd</p>
+									<p>Orange, MA 00000</p>
+									<p>508-444-4444</p>
+									<p>email@email.com</p>
+								</div>
+								<div class="contact-social">
+									<i class="fab fa-twitter"></i>
+									<i class="fab fa-facebook"></i>
+									<i class="fab fa-instagram"></i>
+									<i class="fab fa-youtube"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End contact area -->
+					<!-- Footer -->
+					<div class="footer col-sm-12 row">
+						<div class="company-footer col-sm-12">
+							<h3>Seeds of Solidarity</h3>
+							<p>165 Chestnut Hill Rd</p>
+							<p>Orange, MA 01364</p>
+							<p>solidarity@seedsofsolidarity.org</p>
+							<p>978-544-7564</p>
+						</div>
+						<div class="social-footer col-sm-12">
+							<i class="fab fa-twitter"></i>
+							<i class="fab fa-facebook"></i>
+							<i class="fab fa-instagram"></i>
+							<i class="fab fa-youtube"></i>
+						</div>
+					</div>
+					<!-- End footer -->
+				</div>
+				<!-- End contact grid container -->
+			</div>
+			<!-- END CONTACT CONTAINER -->
+		</div>
+		<!-- END BODY CONTAINER -->
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+			integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
