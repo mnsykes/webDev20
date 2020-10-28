@@ -1,0 +1,567 @@
+// Variables
+$yellow: #f1cf69;
+$green: #87b499;
+$dark-green: #465649;
+
+// GLOBAL STYLES
+* {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	// overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+// END GLOBAL STYLES
+
+// HEADER WITH NAVIGAION
+.navbar {
+	background: $dark-green;
+
+	// logo
+	.navbar-brand {
+		color: $yellow;
+		font-size: 2rem;
+
+		&:hover {
+			color: white;
+			text-decoration: $yellow underline;
+		}
+	}
+	// end logo
+
+	// links
+	.nav-item {
+		padding-left: 2rem;
+		font-weight: bold;
+		text-transform: uppercase;
+
+		a {
+			color: $yellow;
+
+			&:hover {
+				color: white;
+				text-decoration: $yellow underline;
+			}
+		}
+	}
+	// end links
+}
+// END HEADER
+
+// LANDING PAGE STYLES
+#landing-page-container {
+	background: url(../assets/images/ghwithclass.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+
+	// call to action
+	.cta {
+		height: 100%;
+		background: rgba($color: $dark-green, $alpha: 0.2);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		h1 {
+			color: rgba($color: white, $alpha: 1);
+			text-shadow: #333;
+			font-size: 6rem;
+			font-weight: bold;
+		}
+
+		button {
+			outline: none;
+			border: none;
+			background: $yellow;
+			color: #333;
+			padding: 1.3rem 3rem;
+			font-size: 1.2rem;
+			cursor: pointer;
+
+			&:hover {
+				background: rgba($color: $yellow, $alpha: 0.9);
+				color: white;
+			}
+		}
+	}
+}
+// END LANDING PAGE STYLES
+
+.body-bg {
+	background: rgba($color: white, $alpha: 0.2);
+}
+
+.content-wrapper {
+	background: white;
+}
+
+// HOME CONTAINER STYLES
+#home-container {
+	height: 100vh;
+	margin: 0 -45px 0 -15px;
+
+	// grid for home content
+	.home-grid {
+		height: 100vh;
+		width: 100%;
+
+		// carousel styles
+		.carousel {
+			max-height: 30rem;
+			border: 1px solid blue;
+			padding: 0;
+
+			.carousel-item {
+				max-height: 30rem;
+
+				img {
+					height: auto;
+					width: 100%;
+				}
+
+				.carousel-caption {
+					color: #333;
+				}
+			}
+		}
+		// end carousel styles
+
+		// Info card styles
+
+		// end info cards
+	}
+	// end home grid
+
+	// sidebar styles
+	.sidebar {
+		border: 1px solid red;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		// donate area
+		.donate {
+			height: 25%;
+			padding: 1rem;
+			border-bottom: 2px solid $dark-green;
+			margin-bottom: 1rem;
+			box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.3);
+
+			button {
+				width: 80%;
+				outline: none;
+				border: none;
+				background: $yellow;
+				color: #333;
+				padding: 1.3rem 3rem;
+				font-size: 1.2rem;
+				cursor: pointer;
+
+				&:hover {
+					background: rgba($color: $yellow, $alpha: 0.9);
+					color: white;
+				}
+			}
+
+			.form-check {
+				display: flex;
+				justify-content: space-evenly;
+			}
+		}
+		// end donate area
+
+		// newsletter area
+		.subscribe {
+			height: 25%;
+			padding: 1rem;
+			border-bottom: 2px solid $dark-green;
+			margin-bottom: 1rem;
+			box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.3);
+
+			input {
+				padding: 1.3rem 3rem;
+				width: 80%;
+			}
+
+			button {
+				width: 80%;
+				outline: none;
+				border: none;
+				background: $yellow;
+				color: #333;
+				padding: 1.3rem 3rem;
+				font-size: 1.2rem;
+				cursor: pointer;
+
+				&:hover {
+					background: rgba($color: $yellow, $alpha: 0.9);
+					color: white;
+				}
+			}
+		}
+		// end newsletter area
+
+		// events area
+		.events {
+			height: 50%;
+			padding: 1rem;
+			border-bottom: 2px solid $dark-green;
+			box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.3);
+
+			td {
+				font-size: 1.6rem;
+			}
+		}
+		// end events area
+	}
+	// end sidebar
+}
+// END HOME CONTAINER STYLES
+
+// FARM CONTAINER STYLES
+#farm-container {
+	height: 100vh;
+
+	// farm content styles
+	.farm-content {
+		border-top: 3px solid $dark-green;
+		border-bottom: 3px solid $dark-green;
+		background: brown;
+
+		.farm-copy {
+			h1 {
+				color: #333;
+				font-weight: bold;
+				font-size: 3rem;
+			}
+
+			p {
+				color: #333;
+				font-size: 1.1rem;
+			}
+
+			.info-boxes-area {
+				// info boxes
+				.info-boxes {
+					height: auto;
+					width: 100%;
+					border: 3px solid $yellow;
+					.box {
+						height: auto;
+						padding: 2rem 0;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						background: $dark-green;
+						cursor: pointer;
+
+						&:hover {
+							background: rgba($color: $dark-green, $alpha: 0.8);
+						}
+
+						h3 {
+							color: $green;
+							font-weight: bold;
+							font-size: 1.7rem;
+						}
+					}
+
+					i {
+						font-size: 6rem;
+						color: $yellow;
+					}
+				}
+				// end info boxes
+			}
+		}
+	}
+	// end farm content
+	.farm-image {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+// END FARM CONTAINER STYLES
+
+// GET INVOLVED CONTAINER STYLES
+#involved-container {
+	height: 100vh;
+
+	#get-involved {
+		height: 100vh;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	#s-gardens {
+		height: 100vh;
+	}
+
+	#gfe {
+		height: 100vh;
+	}
+
+	#sol {
+		height: 100vh;
+	}
+}
+// END GET INVOLVED CONTAINER STYLES
+
+// BLOG CONTAINER STYLES
+#blog-container {
+	height: 100vh;
+	background: cadetblue;
+}
+// END BLOG CONTAINER STYLES
+
+// ABOUT CONTAINER STYLES
+#about-container {
+	height: 100vh;
+
+	.about-content {
+		padding: 1rem 0;
+		border-top: 3px solid $dark-green;
+		border-bottom: 3px solid $dark-green;
+
+		.about-image {
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.about-copy {
+			padding: 0 4rem;
+			display: flex;
+			flex-direction: column;
+
+			h1 {
+				color: #333;
+				font-weight: bold;
+				font-size: rem;
+			}
+
+			p {
+				color: #333;
+				font-size: 1.1rem;
+			}
+		}
+	}
+
+	// Info boxes
+	.about-boxes {
+		margin-top: 2rem;
+		height: auto;
+
+		.about-box {
+			height: auto;
+			padding: 2rem 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background: $dark-green;
+			cursor: pointer;
+			box-shadow: 6px 5px 20px 2px rgba(51, 51, 51, 0.1);
+
+			&:hover {
+				background: rgba($color: $dark-green, $alpha: 0.8);
+			}
+
+			h3 {
+				color: $green;
+				font-weight: bold;
+				font-size: 1.7rem;
+			}
+		}
+
+		i {
+			font-size: 6rem;
+			color: $yellow;
+		}
+	}
+	// end info boxes
+}
+// END ABOUT CONTAINER STYLES
+
+// CONTACT CONTAINER STYLES
+#contact-container {
+	height: 100vh;
+
+	// Grid container for contact map and form
+	.contact {
+		// map area - top
+		.map {
+			height: auto;
+			width: 100%;
+			box-shadow: 6px 5px 20px 2px rgba(51, 51, 51, 0.1);
+
+			iframe {
+				width: 100%;
+				height: auto;
+			}
+		}
+		// end map
+
+		// contact area - bottom
+		.contact-area {
+			border-top: 2px solid $dark-green;
+			border-bottom: 2px solid $dark-green;
+
+			// form area - left side
+			form {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				box-shadow: 6px 5px 20px 2px rgba(51, 51, 51, 0.1);
+
+				.form-head {
+					font-size: 1.7rem;
+				}
+
+				.contact-input {
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+
+					.inputs {
+						display: flex;
+					}
+
+					i {
+						background: $dark-green;
+						font-size: 1rem;
+						color: $yellow;
+						margin: 0.3rem 0;
+						padding: 0.7rem;
+						width: 3rem;
+						height: auto;
+						text-align: center;
+					}
+
+					input {
+						margin: 0.3rem 0;
+						width: 100%;
+						padding: 0.7rem;
+						border: none;
+						box-shadow: 6px 5px 20px 2px rgba(51, 51, 51, 0.1);
+					}
+				}
+
+				.contact-textarea {
+					textarea {
+						padding: 0.7rem;
+						border: none;
+						width: 100%;
+						box-shadow: 6px 5px 20px 2px rgba(51, 51, 51, 0.1);
+					}
+
+					.contact-button {
+						button {
+							width: 100%;
+							border: none;
+							outline: none;
+							background: $yellow;
+							font-size: 1.5rem;
+							padding: 0.5rem;
+							margin-bottom: 0.3rem;
+						}
+					}
+				}
+			}
+			// end form area left side
+
+			// contact info - right side
+			.contact-info {
+				display: flex;
+				flex-direction: column;
+				width: 99%;
+				justify-content: center;
+				align-items: center;
+				margin: 0 auto;
+
+				.contact-grid {
+					display: flex;
+					flex-direction: column;
+					padding: 1rem 3rem;
+					background: white;
+					height: 100%;
+					box-shadow: 6px 5px 20px 2px rgba(51, 51, 51, 0.1);
+
+					.contact-address {
+						width: 100%;
+						border-bottom: 2px solid $dark-green;
+						margin-bottom: 3rem;
+						padding-bottom: 4rem;
+
+						h3 {
+							font-size: 1.57rem;
+							margin-bottom: 1.5rem;
+							color: #333;
+							font-weight: bold;
+						}
+
+						p {
+							font-size: 1.1rem;
+							color: #333;
+						}
+					}
+
+					.contact-social {
+						width: 100%;
+						font-size: 3rem;
+						text-align: center;
+						color: $dark-green;
+					}
+				}
+			}
+			// end contact info right side
+		}
+		// end contact area bottom
+		// Footer
+		.footer {
+			width: 100%;
+			background: rgba($color: $dark-green, $alpha: 1);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			h3 {
+				color: $yellow;
+			}
+
+			p {
+				color: white;
+			}
+
+			.social-footer {
+				display: flex;
+				justify-content: space-between;
+
+				i {
+					margin: 0 1.5rem;
+					font-size: 1.5rem;
+					color: $yellow;
+				}
+			}
+		}
+		// End contact grid area
+	}
+	// end contact container styles
+}
+// END CONTACT CONTAINER
