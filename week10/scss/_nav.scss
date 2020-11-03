@@ -1,0 +1,43 @@
+// HEADER WITH NAVIGAION
+
+.navbar {
+	background: $dark-green;
+	height: 10%;
+	// logo
+
+	.navbar-brand {
+		color: $yellow;
+		font-size: 2rem;
+
+		i {
+			color: $yellow;
+			font-size: 2rem;
+		}
+
+		&:hover {
+			color: white;
+			text-decoration: $yellow underline;
+		}
+	}
+	// end logo
+
+	// links
+	.nav-item {
+		padding-left: 2rem;
+		font-weight: bold;
+		text-transform: uppercase;
+
+		a.nav-link {
+			color: $yellow;
+
+			&:hover {
+				color: white;
+				text-decoration: $yellow underline;
+			}
+		}
+	}
+
+	// end links
+}
+
+// END HEADER

@@ -1,0 +1,35 @@
+// FARM CONTAINER STYLES
+#farm-container {
+	height: 100%;
+
+	.farm-main {
+		height: 100%;
+		.farm-sub-nav {
+			a {
+				color: $yellow;
+			}
+
+			// farm content styles
+
+			.farm-copy {
+				h1 {
+					color: #333;
+					font-weight: bold;
+					font-size: 3rem;
+				}
+
+				p {
+					color: #333;
+					font-size: 1.1rem;
+				}
+
+				.farm-image {
+					img {
+						width: 100%;
+						height: auto;
+					}
+				}
+			}
+		}
+	}
+} // END FARM CONTAINER STYLES

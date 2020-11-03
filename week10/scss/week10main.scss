@@ -5,16 +5,19 @@
 // font-family: 'Barlow', sans-serif; +++++++ GREAT FOR BODY COPY
 // font-family: 'Bellota', cursive; LOGO POSSIBLILITY
 // font-family: 'Sevillana', cursive; LOGO POSSIBLILITY
-// Variables
-$yellow: #f1cf69;
-$green: #87b499;
-$dark-green: #465649;
+
+@import "variables";
+@import "nav";
+@import "sidebar";
+@import "footer";
+@import "farm";
 
 // GLOBAL STYLES
 * {
+	margin: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-	// overflow: hidden;
+	overflow: hidden;
 	font-family: "average sans", sans-serif;
 }
 
@@ -27,99 +30,13 @@ ul {
 }
 // END GLOBAL STYLES
 
-#hamburger {
-	cursor: pointer;
-	position: fixed;
-	color: $dark-green;
-}
-
-#xbtn {
-	cursor: pointer;
-	color: white;
-}
-
-#side-nav {
-	height: 100%;
-	width: 20%;
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	background: rgba($color: #000000, $alpha: 0.7);
-}
-
-// HEADER WITH NAVIGAION
-
-.navbar {
-	background: white;
-	// logo
-
-	i {
-		color: $yellow;
-		font-size: 2rem;
-	}
-	.navbar-brand {
-		color: $yellow;
-		font-size: 2rem;
-		margin-left: 40rem;
-
-		&:hover {
-			color: white;
-			text-decoration: $yellow underline;
-		}
-	}
-	// end logo
-
-	// links
-	.nav-item {
-		padding-left: 2rem;
-		font-weight: bold;
-		text-transform: uppercase;
-
-		a.nav-link {
-			color: $yellow;
-
-			&:hover {
-				color: white;
-				text-decoration: $yellow underline;
-			}
-		}
-	}
-
-	.search-area {
-		display: flex;
-
-		#search-icon {
-			cursor: pointer;
-			padding-right: 2rem;
-
-			i {
-				color: $dark-green;
-				margin-right: 0.5rem;
-				position: fixed;
-			}
-
-			&:hover {
-				transform: scale(1.1);
-			}
-		}
-		#search-bar {
-			display: none;
-		}
-	}
-
-	// end links
-}
-// END HEADER
-
 // LANDING PAGE STYLES
 #landing-page-container {
-	// background: url(../assets/images/ghwithclass.jpg);
-	// background-repeat: no-repeat;
-	// background-position: center;
-	// background-size: cover;
-	// background: rgba($color: $green, $alpha: 0.5);
+	background: url(../assets/images/ghwithclass.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
 	height: 100vh;
 	width: 100vw;
 
@@ -203,162 +120,23 @@ ul {
 		// end info cards
 	}
 	// end home grid
-
-	// sidebar styles
-	.sidebar {
-		border: 1px solid red;
-		margin: 0;
-		padding: 0;
-		width: 100%;
-		// donate area
-		.donate {
-			height: 25%;
-			padding: 1rem;
-			border-bottom: 2px solid $dark-green;
-			margin-bottom: 1rem;
-			box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.3);
-
-			button {
-				width: 80%;
-				outline: none;
-				border: none;
-				background: $yellow;
-				color: #333;
-				padding: 1.3rem 3rem;
-				font-size: 1.2rem;
-				cursor: pointer;
-
-				&:hover {
-					background: rgba($color: $yellow, $alpha: 0.9);
-					color: white;
-				}
-			}
-
-			.form-check {
-				display: flex;
-				justify-content: space-evenly;
-			}
-		}
-		// end donate area
-
-		// newsletter area
-		.subscribe {
-			height: 25%;
-			padding: 1rem;
-			border-bottom: 2px solid $dark-green;
-			margin-bottom: 1rem;
-			box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.3);
-
-			input {
-				padding: 1.3rem 3rem;
-				width: 80%;
-			}
-
-			button {
-				width: 80%;
-				outline: none;
-				border: none;
-				background: $yellow;
-				color: #333;
-				padding: 1.3rem 3rem;
-				font-size: 1.2rem;
-				cursor: pointer;
-
-				&:hover {
-					background: rgba($color: $yellow, $alpha: 0.9);
-					color: white;
-				}
-			}
-		}
-		// end newsletter area
-
-		// events area
-		.events {
-			height: 50%;
-			padding: 1rem;
-			border-bottom: 2px solid $dark-green;
-			box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.3);
-
-			td {
-				font-size: 1.6rem;
-			}
-		}
-		// end events area
-	}
-	// end sidebar
 }
 // END HOME CONTAINER STYLES
-
-// FARM CONTAINER STYLES
-#farm-container {
-	height: 100vh;
-
-	// farm content styles
-	.farm-content {
-		border-top: 3px solid $dark-green;
-		border-bottom: 3px solid $dark-green;
-
-		.farm-copy {
-			h1 {
-				color: #333;
-				font-weight: bold;
-				font-size: 3rem;
-			}
-
-			p {
-				color: #333;
-				font-size: 1.1rem;
-			}
-
-			.info-boxes-area {
-				// info boxes
-				.info-boxes {
-					height: auto;
-					width: 100%;
-
-					.box {
-						height: auto;
-						padding: 2rem 0;
-						display: flex;
-						flex-direction: column;
-						justify-content: center;
-						align-items: center;
-						background: $dark-green;
-						cursor: pointer;
-
-						&:hover {
-							background: rgba($color: $dark-green, $alpha: 0.8);
-						}
-
-						h3 {
-							color: $green;
-							font-weight: bold;
-							font-size: 1.7rem;
-						}
-					}
-
-					i {
-						font-size: 6rem;
-						color: $yellow;
-					}
-				}
-				// end info boxes
-			}
-		}
-	}
-	// end farm content
-	.farm-image {
-		img {
-			width: 100%;
-			height: auto;
-		}
-	}
-}
-// END FARM CONTAINER STYLES
 
 // GET INVOLVED CONTAINER STYLES
 #involved-container {
 	height: 100vh;
+
+	#nav-tab {
+		a {
+			font-size: 2rem;
+			color: red;
+
+			&:hover {
+				color: $dark-green;
+			}
+		}
+	}
 
 	#get-involved {
 		height: 100vh;
@@ -589,33 +367,6 @@ ul {
 			// end contact info right side
 		}
 		// end contact area bottom
-		// Footer
-		.footer {
-			width: 100%;
-			background: rgba($color: $dark-green, $alpha: 1);
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-
-			h3 {
-				color: $yellow;
-			}
-
-			p {
-				color: white;
-			}
-
-			.social-footer {
-				display: flex;
-				justify-content: space-between;
-
-				i {
-					margin: 0 1.5rem;
-					font-size: 1.5rem;
-					color: $yellow;
-				}
-			}
-		}
 		// End contact grid area
 	}
 	// end contact container styles

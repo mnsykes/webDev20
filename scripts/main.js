@@ -1,28 +1,23 @@
-// HOMEPAGE CAROUSEL
-// var slideIndex = 0;
-// showSlides();
-
-// function showSlides() {
-// 	var i;
-// 	var slides = document.getElementsByClassName("carousel-item");
-// 	for (i = 0; i < slides.length; i++) {
-// 		slides[i].style.display = "none";
-// 	}
-// 	slideIndex++;
-// 	if (slideIndex > slides.length) {
-// 		slideIndex = 1;
-// 	}
-// 	slides[slideIndex - 1].style.display = "block";
-// 	setTimeout(showSlides, 2500); // Change image every 2.5 seconds
-// }
-// END HOMEPAGE CAROUSEL
-
-// MATERIALIZE
-document.addEventListener("DOMContentLoaded", function () {
-	var elems = document.querySelectorAll(".sidenav");
-	var instances = M.Sidenav.init(elems, options);
+$(document).ready(function () {
+	// Click on magnifying glass icon to hide/show search bar
+	$("#search-icon").click(function () {
+		$("#search-bar").toggle();
+	}); // end search bar
 });
 
-var landing = document.getElementById("landing-page-container");
+// side nav
+var hamburger = document.getElementById("hamburger");
+var sideNav = document.getElementById("side-nav");
+var xbtn = document.getElementById("xbtn");
 
-landing.style.backgroundColor = "red";
+hamburger.addEventListener("click", openNav);
+xbtn.addEventListener("click", closeNav);
+
+function openNav() {
+	sideNav.style.display = "block";
+}
+
+function closeNav() {
+	sideNav.style.display = "none";
+}
+// end side nav
