@@ -1,35 +1,49 @@
 // FARM CONTAINER STYLES
 #farm-container {
-	height: 100%;
-
 	.farm-main {
-		height: 100%;
-		.farm-sub-nav {
-			a {
-				color: $yellow;
+		padding-top: 6rem;
+
+		.farm-copy {
+			.volunteer {
+				padding: 1rem 2rem;
+				border-top: 3px solid $dark-green;
+				border-bottom: 3px solid $dark-green;
+				background: rgba($color: $yellow, $alpha: 0.5);
+
+				span {
+					font-weight: bold;
+					font-size: 1.5rem;
+				}
 			}
 
-			// farm content styles
+			.img-header-farm {
+				height: 25rem;
+				width: 69.375rem;
+				background: url(../assets/images/no-till.jpg);
+				background-size: cover;
+				background-position: center center;
+			}
 
-			.farm-copy {
-				h1 {
-					color: #333;
-					font-weight: bold;
-					font-size: 3rem;
-				}
+			.img-header-grow {
+				height: 25rem;
+				width: 69.375rem;
+				background: url(../assets/images/farm-cardboard.jpg);
+				background-size: cover;
+				background-position: center center;
+			}
 
-				p {
-					color: #333;
-					font-size: 1.1rem;
-				}
+			.img-header-energy {
+				height: 25rem;
+				width: 69.375rem;
+				background: url(../assets/images/farm-solarstudents.jpg);
+				background-size: cover;
+				background-position: center center;
+			}
 
-				.farm-image {
-					img {
-						width: 100%;
-						height: auto;
-					}
-				}
+			.construction {
+				list-style-type: disc;
 			}
 		}
 	}
-} // END FARM CONTAINER STYLES
+}
+// END FARM CONTAINER STYLES

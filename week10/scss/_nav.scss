@@ -2,16 +2,23 @@
 
 .navbar {
 	background: $dark-green;
-	height: 10%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+
 	// logo
 
 	.navbar-brand {
 		color: $yellow;
 		font-size: 2rem;
+		font-family: "bellota", cursive;
 
 		i {
 			color: $yellow;
 			font-size: 2rem;
+			transition: all 0.3s ease;
 		}
 
 		&:hover {
@@ -29,10 +36,30 @@
 
 		a.nav-link {
 			color: $yellow;
+			transition: all 0.3s ease;
 
 			&:hover {
 				color: white;
 				text-decoration: $yellow underline;
+			}
+		}
+	}
+
+	form {
+		input {
+			border-radius: 0;
+		}
+		.btn {
+			color: #333;
+			outline: none;
+			border: none;
+			background: $yellow;
+			border-radius: 0;
+			transition: all 0.3s ease;
+
+			&:hover {
+				background: rgba($color: $yellow, $alpha: 0.9);
+				color: white;
 			}
 		}
 	}

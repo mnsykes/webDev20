@@ -1,32 +1,84 @@
 // Footer
 .footer {
-	height: 10%;
-	// width: 100%;
-	background: rgba($color: $dark-green, $alpha: 1);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	width: 100%;
+	background: $dark-green;
+	padding-top: 1.5rem;
 
-	h3 {
-		color: $yellow;
-	}
-
-	p {
-		color: white;
-	}
-
-	.social-footer {
+	// left side containing farm contact info
+	.company-footer {
+		padding-left: 6rem;
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
 
-		i {
-			margin: 0 1.5rem;
-			font-size: 1.5rem;
+		h3 {
 			color: $yellow;
+			font-family: "bellota", cursive;
+
+			&:hover {
+				color: white;
+				text-decoration: $yellow underline;
+			}
+		}
+
+		a {
+			color: $yellow;
+
+			&:hover {
+				color: white;
+				text-decoration: $yellow underline;
+			}
 		}
 	}
+	// end farm contact info
+
+	// center containing newsletter subscribe form
+	.subscribe-footer {
+		input {
+			height: 3rem;
+		}
+
+		.btn {
+			height: 3rem;
+			border: none;
+			outline: none;
+			border-radius: 0;
+			background: $yellow;
+
+			&:hover {
+				background: rgba($color: $yellow, $alpha: 0.9);
+				color: white;
+				font-weight: bold;
+			}
+		}
+
+		h3 {
+			color: $yellow;
+			font-weight: bold;
+		}
+	}
+	// end newsletter
+
+	// right side containing social media icons
+	.social-footer {
+		h3 {
+			color: $yellow;
+			font-weight: bold;
+		}
+
+		.social-icons {
+			display: flex;
+			justify-content: center;
+			i {
+				margin: 0 0.5rem;
+				font-size: 3rem;
+				color: $yellow;
+
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+	// end social icons
 }
+// end footer

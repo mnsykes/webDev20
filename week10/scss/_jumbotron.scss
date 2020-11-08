@@ -1,0 +1,26 @@
+.jumbotron {
+	background: $dark-green;
+
+	hr {
+		background: $yellow;
+	}
+
+	.container {
+		p {
+			color: white;
+		}
+
+		a {
+			color: $yellow;
+		}
+
+		h1 {
+			color: $yellow;
+			font-family: "bellota", cursive;
+
+			i {
+				color: $yellow;
+			}
+		}
+	}
+}

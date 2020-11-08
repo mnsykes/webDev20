@@ -1,0 +1,117 @@
+// HOME CONTAINER STYLES
+#home-container {
+	// grid for home content
+	.home-main {
+		padding-top: 6rem;
+
+		.farm-news {
+			border-bottom: 2px solid $dark-green;
+
+			#newsletter {
+				width: 70%;
+				margin: 0 auto 3.5rem auto;
+				border-bottom: 3px solid $dark-green;
+
+				.form-head {
+					padding: 0.5rem 0;
+					width: 100%;
+					background: $dark-green;
+					h2 {
+						color: $yellow;
+						border-bottom: 2px solid $dark-green;
+						text-align: center;
+					}
+				}
+
+				.form-body {
+					padding: 1rem 2rem 0 2rem;
+					font-weight: bold;
+				}
+
+				.form-group {
+					input {
+						border: 1px solid $dark-green;
+						height: 3rem;
+					}
+
+					button {
+						height: 3rem;
+						background: $yellow;
+						color: #333;
+						border-radius: 0;
+						outline: none;
+						border: none;
+
+						&:hover {
+							background: rgba($color: $yellow, $alpha: 0.9);
+							color: white;
+						}
+					}
+				}
+			}
+		}
+
+		.card {
+			.btn {
+				width: 100%;
+				border: none;
+				outline: none;
+				background: $yellow;
+				color: #333;
+
+				&:hover {
+					background: rgba($color: $dark-green, $alpha: 0.9);
+					color: $yellow;
+					font-weight: bold;
+				}
+			}
+		}
+
+		.donate {
+			padding-bottom: 2rem;
+
+			h1 {
+				padding: 1rem;
+				color: #333;
+				text-align: center;
+				display: inline-block;
+				width: 100%;
+				border-bottom: 3px solid $dark-green;
+			}
+
+			form {
+				label {
+					font-weight: bold;
+				}
+
+				input {
+					padding: 0.7rem;
+					border-radius: 0;
+				}
+
+				select {
+					border-radius: 0;
+				}
+
+				button {
+					color: #333;
+					width: 100%;
+					border: none;
+					outline: none;
+					background: $yellow;
+					font-size: 1.5rem;
+					padding: 0.5rem;
+					margin-bottom: 0.3rem;
+
+					&:hover {
+						background: rgba($color: $dark-green, $alpha: 0.9);
+						color: $yellow;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+	// end home grid
+}
+// END HOME CONTAINER STYLES

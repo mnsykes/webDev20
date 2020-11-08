@@ -1,0 +1,124 @@
+// CONTACT CONTAINER STYLES
+#contact-container {
+	padding-top: 6rem;
+
+	// Content container for contact page
+	.contact-main {
+		// jumbotron contact area
+		.info-contact {
+			.farm-contact {
+				display: flex;
+				flex-direction: column;
+				a {
+					transition: all 0.3s ease;
+
+					&:hover {
+						color: white;
+						text-decoration: $yellow underline;
+					}
+				}
+			}
+
+			.contact-social {
+				width: 100%;
+
+				a {
+					text-decoration: none;
+				}
+
+				i {
+					font-size: 3rem;
+					text-align: center;
+
+					&:hover {
+						transform: scale(1.1);
+					}
+				}
+			}
+		}
+		// end jumbotron contact area
+
+		// map area
+		#map {
+			width: 100%;
+
+			iframe {
+				width: 100%;
+			}
+		}
+		// end map area
+
+		// contact area - bottom
+		.contact-area {
+			border-top: 2px solid $dark-green;
+			border-bottom: 2px solid $dark-green;
+
+			form {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+
+				.form-head {
+					font-size: 1.7rem;
+				}
+
+				.contact-input {
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+
+					.inputs {
+						display: flex;
+					}
+
+					i {
+						background: $dark-green;
+						font-size: 1rem;
+						color: $yellow;
+						margin: 0.3rem 0;
+						padding: 0.7rem;
+						width: 3rem;
+						height: auto;
+						text-align: center;
+					}
+
+					input {
+						margin: 0.3rem 0;
+						width: 100%;
+						padding: 0.7rem;
+						border: none;
+					}
+				}
+
+				.contact-textarea {
+					textarea {
+						padding: 0.7rem;
+						width: 100%;
+						border: none;
+					}
+
+					.contact-button {
+						button {
+							width: 100%;
+							border: none;
+							outline: none;
+							background: $yellow;
+							font-size: 1.5rem;
+							padding: 0.5rem;
+							margin-bottom: 0.3rem;
+							transition: all 0.3s ease;
+
+							&:hover {
+								background: $dark-green;
+								color: $yellow;
+							}
+						}
+					}
+				}
+			}
+		}
+		// end bottom contact area
+	}
+	// end content container
+}
+// END CONTACT CONTAINER

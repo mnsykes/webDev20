@@ -1,0 +1,47 @@
+// ABOUT CONTAINER STYLES
+#about-container {
+	.about-main {
+		padding-top: 6rem;
+
+		#about-copy {
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		#community-copy {
+			.img-header-community {
+				height: 25rem;
+				width: 69.375rem;
+				background: url(../assets/images/workshop-circle.jpg);
+				background-size: cover;
+				background-position: center center;
+			}
+
+			.partners {
+				display: flex;
+				justify-content: center;
+				img {
+					height: 250px;
+					width: 250px;
+
+					&:hover {
+						transform: scale(1.1);
+					}
+				}
+			}
+		}
+
+		#staff-copy {
+			.img-header-staff {
+				height: 25rem;
+				width: 69.375rem;
+				background: url(../assets/images/involved-gfe-wellness-garden.jpg);
+				background-size: cover;
+				background-position: center center;
+			}
+		}
+	}
+}
+// END ABOUT CONTAINER STYLES

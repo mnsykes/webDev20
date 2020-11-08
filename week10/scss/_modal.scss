@@ -1,0 +1,43 @@
+#subscribe-modal {
+	border-radius: none;
+
+	.modal-header {
+		background: $dark-green;
+	}
+
+	p {
+		font-size: 1.3rem;
+	}
+
+	h1 {
+		color: $yellow;
+
+		i {
+			color: $yellow;
+		}
+	}
+
+	span {
+		color: $yellow;
+	}
+
+	.modal-footer {
+		background: $dark-green;
+		input {
+			height: 3rem;
+		}
+
+		.btn {
+			height: 3rem;
+			background: $yellow;
+			color: $dark-green;
+			border-radius: 0;
+			border: none;
+			outline: none;
+
+			&:hover {
+				background: rgba($color: $yellow, $alpha: 0.9);
+			}
+		}
+	}
+}

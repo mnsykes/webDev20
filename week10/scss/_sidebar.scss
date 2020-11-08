@@ -1,0 +1,48 @@
+.social-bar {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+
+	a {
+		display: block;
+		text-align: center;
+		padding: 1rem;
+		transition: all 0.3s ease;
+		color: white;
+		font-size: 1.3rem;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	.facebook {
+		background: rgba($color: $facebook, $alpha: 0.6);
+
+		&:hover {
+			background: rgba($color: $facebook, $alpha: 1);
+		}
+	}
+
+	.twitter {
+		background: rgba($color: $twitter, $alpha: 0.6);
+
+		&:hover {
+			background: rgba($color: $twitter, $alpha: 1);
+		}
+	}
+	.instagram {
+		background: rgba($color: $instagram, $alpha: 0.6);
+
+		&:hover {
+			background: rgba($color: $instagram, $alpha: 1);
+		}
+	}
+	.youtube {
+		background: rgba($color: $youtube, $alpha: 0.6);
+
+		&:hover {
+			background: rgba($color: $youtube, $alpha: 1);
+		}
+	}
+}

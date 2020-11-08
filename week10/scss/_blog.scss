@@ -1,0 +1,26 @@
+// BLOG CONTAINER STYLES
+#blog-container {
+	.blog-main {
+		margin-top: 6rem;
+
+		.publications {
+			ul {
+				list-style-type: circle;
+			}
+		}
+
+		.resources {
+			ul {
+				list-style: circle;
+			}
+		}
+
+		.archives {
+			margin-bottom: 3rem;
+			a {
+				margin-right: 1rem;
+			}
+		}
+	}
+}
+// END BLOG CONTAINER STYLES

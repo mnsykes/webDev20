@@ -1,0 +1,23 @@
+#farmstand-container {
+	.farmstand-main {
+		margin-top: 6rem;
+
+		.farmstand-copy {
+			.img-header-farmstand {
+				height: 25rem;
+				width: 69.375rem;
+				background: url(../assets/images/farmstand-interior.jpg);
+				background-size: cover;
+				background-position: center center;
+			}
+
+			.img-header-art {
+				height: 25rem;
+				width: 69.375rem;
+				background: url(../assets/images/farmstand-altar.jpg);
+				background-size: cover;
+				background-position: center center;
+			}
+		}
+	}
+}
